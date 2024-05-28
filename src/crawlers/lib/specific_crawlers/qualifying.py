@@ -1,6 +1,6 @@
 import sys
 from lib.tojson import exportJson
-from lib.common import parse_url_content, get_driver_info
+from lib.common import parse_url_content, get_driver_info, team_color
 
 if __name__ == "__main__":
   year = sys.argv[1]
@@ -20,6 +20,7 @@ if __name__ == "__main__":
           "position": None if columns[1].text.strip() == "NC" else int(columns[1].text.strip()),
           "driver": get_driver_info(columns[3], columns[2]),
           "car": columns[4].text.strip(),
+          "teamColor": team_color(columns[4].text.strip()),
           "times": {
             "q1": columns[5].text.strip() if columns[5].text.strip() else None,
             "q2": columns[6].text.strip() if columns[6].text.strip() else None,

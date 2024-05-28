@@ -27,8 +27,20 @@ type RaceResults = F1ApiData & {
       number: number;
     };
     car: string;
+    teamColor: string;
     laps: number;
     time: string;
     points: number;
+  }>;
+};
+
+type SeasonStructure = {
+  year: number;
+  weekends: Array<{
+    location: string;
+    keywords: Array<string>;
+    id: number;
+    sprint: boolean;
+    isOver: boolean;
   }>;
 };

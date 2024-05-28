@@ -1,5 +1,5 @@
 {
-    "id": "5915b897-e1cd-4879-865f-fd8451605e76",
+    "id": "bece20a3-fa2b-49bb-bace-18b165fcd32a",
     "weekendid": "1235",
     "session_type": "fp1",
     "year": "2024",
@@ -17,6 +17,7 @@
                 "number": 16
             },
             "car": "Ferrari",
+            "teamColor": "rgb(232,0,32)",
             "time": "1:16.990",
             "gap": null,
             "laps": 30
@@ -30,6 +31,7 @@
                 "number": 63
             },
             "car": "Mercedes",
+            "teamColor": "rgb(39,244,210)",
             "time": "1:17.094",
             "gap": "+0.104s",
             "laps": 28
@@ -43,6 +45,7 @@
                 "number": 55
             },
             "car": "Ferrari",
+            "teamColor": "rgb(232,0,32)",
             "time": "1:17.120",
             "gap": "+0.130s",
             "laps": 25
@@ -56,6 +59,7 @@
                 "number": 11
             },
             "car": "Red Bull Racing Honda RBPT",
+            "teamColor": "rgb(54,113,198)",
             "time": "1:17.233",
             "gap": "+0.243s",
             "laps": 23
@@ -69,6 +73,7 @@
                 "number": 1
             },
             "car": "Red Bull Racing Honda RBPT",
+            "teamColor": "rgb(54,113,198)",
             "time": "1:17.240",
             "gap": "+0.250s",
             "laps": 21
@@ -82,6 +87,7 @@
                 "number": 22
             },
             "car": "RB Honda RBPT",
+            "teamColor": "rgb(102,146,255)",
             "time": "1:17.388",
             "gap": "+0.398s",
             "laps": 29
@@ -95,6 +101,7 @@
                 "number": 44
             },
             "car": "Mercedes",
+            "teamColor": "rgb(39,244,210)",
             "time": "1:17.408",
             "gap": "+0.418s",
             "laps": 27
@@ -108,6 +115,7 @@
                 "number": 4
             },
             "car": "McLaren Mercedes",
+            "teamColor": "rgb(255,128,0)",
             "time": "1:17.602",
             "gap": "+0.612s",
             "laps": 17
@@ -121,6 +129,7 @@
                 "number": 81
             },
             "car": "McLaren Mercedes",
+            "teamColor": "rgb(255,128,0)",
             "time": "1:17.807",
             "gap": "+0.817s",
             "laps": 25
@@ -134,6 +143,7 @@
                 "number": 14
             },
             "car": "Aston Martin Aramco Mercedes",
+            "teamColor": "rgb(34,153,113)",
             "time": "1:17.867",
             "gap": "+0.877s",
             "laps": 18
@@ -147,6 +157,7 @@
                 "number": 10
             },
             "car": "Alpine Renault",
+            "teamColor": "rgb(0,147,204)",
             "time": "1:17.905",
             "gap": "+0.915s",
             "laps": 21
@@ -160,6 +171,7 @@
                 "number": 18
             },
             "car": "Aston Martin Aramco Mercedes",
+            "teamColor": "rgb(34,153,113)",
             "time": "1:18.072",
             "gap": "+1.082s",
             "laps": 22
@@ -173,6 +185,7 @@
                 "number": 3
             },
             "car": "RB Honda RBPT",
+            "teamColor": "rgb(102,146,255)",
             "time": "1:18.142",
             "gap": "+1.152s",
             "laps": 26
@@ -186,6 +199,7 @@
                 "number": 31
             },
             "car": "Alpine Renault",
+            "teamColor": "rgb(0,147,204)",
             "time": "1:18.612",
             "gap": "+1.622s",
             "laps": 29
@@ -199,6 +213,7 @@
                 "number": 50
             },
             "car": "Haas Ferrari",
+            "teamColor": "rgb(182,186,189)",
             "time": "1:18.667",
             "gap": "+1.677s",
             "laps": 31
@@ -212,6 +227,7 @@
                 "number": 77
             },
             "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
             "time": "1:18.827",
             "gap": "+1.837s",
             "laps": 23
@@ -225,6 +241,7 @@
                 "number": 24
             },
             "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
             "time": "1:19.129",
             "gap": "+2.139s",
             "laps": 18
@@ -238,6 +255,7 @@
                 "number": 2
             },
             "car": "Williams Mercedes",
+            "teamColor": "rgb(100,196,255)",
             "time": "1:19.901",
             "gap": "+2.911s",
             "laps": 22
@@ -251,6 +269,7 @@
                 "number": 23
             },
             "car": "Williams Mercedes",
+            "teamColor": "rgb(100,196,255)",
             "time": "1:20.050",
             "gap": "+3.060s",
             "laps": 8
@@ -264,6 +283,7 @@
                 "number": 27
             },
             "car": "Haas Ferrari",
+            "teamColor": "rgb(182,186,189)",
             "time": "1:21.059",
             "gap": "+4.069s",
             "laps": 20

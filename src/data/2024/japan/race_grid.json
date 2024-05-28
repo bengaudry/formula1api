@@ -1,5 +1,5 @@
 {
-    "id": "daa7520d-085f-4e22-a3a3-ce1e930f228e",
+    "id": "b679bd33-cadc-421e-9fd0-15cfe03d008f",
     "weekendid": "1232",
     "session_type": "race-grid",
     "year": "2024",
@@ -17,6 +17,7 @@
                 "number": 1
             },
             "car": "Red Bull Racing Honda RBPT",
+            "teamColor": "rgb(54,113,198)",
             "time": "1:28.197"
         },
         {
@@ -28,6 +29,7 @@
                 "number": 11
             },
             "car": "Red Bull Racing Honda RBPT",
+            "teamColor": "rgb(54,113,198)",
             "time": "1:28.263"
         },
         {
@@ -39,6 +41,7 @@
                 "number": 4
             },
             "car": "McLaren Mercedes",
+            "teamColor": "rgb(255,128,0)",
             "time": "1:28.489"
         },
         {
@@ -50,6 +53,7 @@
                 "number": 55
             },
             "car": "Ferrari",
+            "teamColor": "rgb(232,0,32)",
             "time": "1:28.682"
         },
         {
@@ -61,6 +65,7 @@
                 "number": 14
             },
             "car": "Aston Martin Aramco Mercedes",
+            "teamColor": "rgb(34,153,113)",
             "time": "1:28.686"
         },
         {
@@ -72,6 +77,7 @@
                 "number": 81
             },
             "car": "McLaren Mercedes",
+            "teamColor": "rgb(255,128,0)",
             "time": "1:28.760"
         },
         {
@@ -83,6 +89,7 @@
                 "number": 44
             },
             "car": "Mercedes",
+            "teamColor": "rgb(39,244,210)",
             "time": "1:28.766"
         },
         {
@@ -94,6 +101,7 @@
                 "number": 16
             },
             "car": "Ferrari",
+            "teamColor": "rgb(232,0,32)",
             "time": "1:28.786"
         },
         {
@@ -105,6 +113,7 @@
                 "number": 63
             },
             "car": "Mercedes",
+            "teamColor": "rgb(39,244,210)",
             "time": "1:29.008"
         },
         {
@@ -116,6 +125,7 @@
                 "number": 22
             },
             "car": "RB Honda RBPT",
+            "teamColor": "rgb(102,146,255)",
             "time": "1:29.413"
         },
         {
@@ -127,6 +137,7 @@
                 "number": 3
             },
             "car": "RB Honda RBPT",
+            "teamColor": "rgb(102,146,255)",
             "time": "1:29.472"
         },
         {
@@ -138,6 +149,7 @@
                 "number": 27
             },
             "car": "Haas Ferrari",
+            "teamColor": "rgb(182,186,189)",
             "time": "1:29.494"
         },
         {
@@ -149,6 +161,7 @@
                 "number": 77
             },
             "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
             "time": "1:29.593"
         },
         {
@@ -160,6 +173,7 @@
                 "number": 23
             },
             "car": "Williams Mercedes",
+            "teamColor": "rgb(100,196,255)",
             "time": "1:29.714"
         },
         {
@@ -171,6 +185,7 @@
                 "number": 31
             },
             "car": "Alpine Renault",
+            "teamColor": "rgb(0,147,204)",
             "time": "1:29.816"
         },
         {
@@ -182,6 +197,7 @@
                 "number": 18
             },
             "car": "Aston Martin Aramco Mercedes",
+            "teamColor": "rgb(34,153,113)",
             "time": "1:30.024"
         },
         {
@@ -193,6 +209,7 @@
                 "number": 10
             },
             "car": "Alpine Renault",
+            "teamColor": "rgb(0,147,204)",
             "time": "1:30.119"
         },
         {
@@ -204,6 +221,7 @@
                 "number": 20
             },
             "car": "Haas Ferrari",
+            "teamColor": "rgb(182,186,189)",
             "time": "1:30.131"
         },
         {
@@ -215,6 +233,7 @@
                 "number": 2
             },
             "car": "Williams Mercedes",
+            "teamColor": "rgb(100,196,255)",
             "time": "1:30.139"
         },
         {
@@ -226,6 +245,7 @@
                 "number": 24
             },
             "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
             "time": "1:30.143"
         }
     ]

@@ -1,5 +1,5 @@
 {
-    "id": "44195b97-0cbf-4b3e-9cef-2aaa070b7707",
+    "id": "0a9cc139-51a9-4a08-93d3-aa96661cee6e",
     "weekendid": "1234",
     "session_type": "sprint-results",
     "year": "2024",
@@ -17,6 +17,7 @@
                 "number": 1
             },
             "car": "Red Bull Racing Honda RBPT",
+            "teamColor": "rgb(54,113,198)",
             "laps": 19,
             "time": "31:31.383",
             "points": 8
@@ -30,6 +31,7 @@
                 "number": 16
             },
             "car": "Ferrari",
+            "teamColor": "rgb(232,0,32)",
             "laps": 19,
             "time": "+3.371s",
             "points": 7
@@ -43,6 +45,7 @@
                 "number": 11
             },
             "car": "Red Bull Racing Honda RBPT",
+            "teamColor": "rgb(54,113,198)",
             "laps": 19,
             "time": "+5.095s",
             "points": 6
@@ -56,6 +59,7 @@
                 "number": 3
             },
             "car": "RB Honda RBPT",
+            "teamColor": "rgb(102,146,255)",
             "laps": 19,
             "time": "+14.971s",
             "points": 5
@@ -69,6 +73,7 @@
                 "number": 55
             },
             "car": "Ferrari",
+            "teamColor": "rgb(232,0,32)",
             "laps": 19,
             "time": "+15.222s",
             "points": 4
@@ -82,6 +87,7 @@
                 "number": 81
             },
             "car": "McLaren Mercedes",
+            "teamColor": "rgb(255,128,0)",
             "laps": 19,
             "time": "+15.750s",
             "points": 3
@@ -95,6 +101,7 @@
                 "number": 27
             },
             "car": "Haas Ferrari",
+            "teamColor": "rgb(182,186,189)",
             "laps": 19,
             "time": "+22.054s",
             "points": 2
@@ -108,6 +115,7 @@
                 "number": 22
             },
             "car": "RB Honda RBPT",
+            "teamColor": "rgb(102,146,255)",
             "laps": 19,
             "time": "+29.816s",
             "points": 1
@@ -121,6 +129,7 @@
                 "number": 10
             },
             "car": "Alpine Renault",
+            "teamColor": "rgb(0,147,204)",
             "laps": 19,
             "time": "+31.880s",
             "points": 0
@@ -134,6 +143,7 @@
                 "number": 2
             },
             "car": "Williams Mercedes",
+            "teamColor": "rgb(100,196,255)",
             "laps": 19,
             "time": "+34.355s",
             "points": 0
@@ -147,6 +157,7 @@
                 "number": 24
             },
             "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
             "laps": 19,
             "time": "+35.078s",
             "points": 0
@@ -160,6 +171,7 @@
                 "number": 63
             },
             "car": "Mercedes",
+            "teamColor": "rgb(39,244,210)",
             "laps": 19,
             "time": "+35.755s",
             "points": 0
@@ -173,6 +185,7 @@
                 "number": 23
             },
             "car": "Williams Mercedes",
+            "teamColor": "rgb(100,196,255)",
             "laps": 19,
             "time": "+36.086s",
             "points": 0
@@ -186,6 +199,7 @@
                 "number": 77
             },
             "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
             "laps": 19,
             "time": "+36.892s",
             "points": 0
@@ -199,6 +213,7 @@
                 "number": 31
             },
             "car": "Alpine Renault",
+            "teamColor": "rgb(0,147,204)",
             "laps": 19,
             "time": "+37.740s",
             "points": 0
@@ -212,6 +227,7 @@
                 "number": 44
             },
             "car": "Mercedes",
+            "teamColor": "rgb(39,244,210)",
             "laps": 19,
             "time": "+49.347s",
             "points": 0
@@ -225,6 +241,7 @@
                 "number": 14
             },
             "car": "Aston Martin Aramco Mercedes",
+            "teamColor": "rgb(34,153,113)",
             "laps": 19,
             "time": "+59.409s",
             "points": 0
@@ -238,6 +255,7 @@
                 "number": 20
             },
             "car": "Haas Ferrari",
+            "teamColor": "rgb(182,186,189)",
             "laps": 19,
             "time": "+66.303s",
             "points": 0
@@ -251,6 +269,7 @@
                 "number": 18
             },
             "car": "Aston Martin Aramco Mercedes",
+            "teamColor": "rgb(34,153,113)",
             "laps": 1,
             "time": "+0 lap",
             "points": 0
@@ -264,6 +283,7 @@
                 "number": 4
             },
             "car": "McLaren Mercedes",
+            "teamColor": "rgb(255,128,0)",
             "laps": 0,
             "time": "+0 lap",
             "points": 0

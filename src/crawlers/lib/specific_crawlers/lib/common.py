@@ -46,3 +46,26 @@ def parse_url_content(url: str):
   
   return session_name, circuit_name, table
   
+def team_color(team: str):
+  if (team == "Ferrari"):
+    return "rgb(232,0,32)"
+  if (team == "McLaren Mercedes"):
+    return "rgb(255,128,0)"
+  if (team == "Mercedes"):
+    return "rgb(39,244,210)"
+  if (team == "Red Bull Racing Honda RBPT"):
+    return "rgb(54,113,198)"
+  if (team == "RB Honda RBPT"):
+    return "rgb(102,146,255)"
+  if (team == "Williams Mercedes"):
+    return "rgb(100,196,255)"
+  if (team == "Alpine Renault"):
+    return "rgb(0,147,204)"
+  if (team == "Aston Martin Aramco Mercedes"):
+    return "rgb(34,153,113)"
+  if (team == "Kick Sauber Ferrari"):
+    return "rgb(82,226,82)"
+  if (team == "Haas Ferrari"):
+    return "rgb(182,186,189)"
+  return None
+  

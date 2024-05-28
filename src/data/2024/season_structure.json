@@ -1,0 +1,173 @@
+{
+  "year": 2024,
+  "weekends": [
+    {
+      "location": "bahrain",
+      "keywords": ["bahrain", "sakhir"],
+      "id": 1229,
+      "sprint": false,
+      "isOver": true
+    },
+    {
+      "location": "saudi-arabia",
+      "keywords": ["djeddah", "jeddah", "saudi-arabia"],
+      "id": 1230,
+      "sprint": false,
+      "isOver": true
+    },
+    {
+      "location": "australia",
+      "keywords": ["melbourne", "australia", "albert park"],
+      "id": 1231,
+      "sprint": false,
+      "isOver": true
+    },
+    {
+      "location": "japan",
+      "keywords": ["suzuka", "japan"],
+      "id": 1232,
+      "sprint": false,
+      "isOver": true
+    },
+    {
+      "location": "china",
+      "keywords": ["china", "shanghai"],
+      "id": 1233,
+      "sprint": true,
+      "isOver": true
+    },
+    {
+      "location": "miami",
+      "keywords": ["miami"],
+      "id": 1234,
+      "sprint": true,
+      "isOver": true
+    },
+    {
+      "location": "emilia-romagna",
+      "keywords": ["emilia-romagna", "imola"],
+      "id": 1235,
+      "sprint": false,
+      "isOver": true
+    },
+    {
+      "location": "monaco",
+      "keywords": ["monte-carlo", "monaco"],
+      "id": 1236,
+      "sprint": false,
+      "isOver": true
+    },
+    {
+      "location": "canada",
+      "keywords": ["canada", "montreal", "villeneuve", "gilles-villeneuve"],
+      "id": 1237,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "spain",
+      "keywords": ["spain", "barcelona"],
+      "id": 1238,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "austria",
+      "keywords": ["austria", "barcelona", "spielberg"],
+      "id": 1239,
+      "sprint": true,
+      "isOver": false
+    },
+    {
+      "location": "great-britain",
+      "keywords": ["great-britain", "silverstone", "england"],
+      "id": 1240,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "hungary",
+      "keywords": ["hungary", "hungaroring"],
+      "id": 1241,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "belgium",
+      "keywords": ["belgium", "spa", "spa-francorchamps"],
+      "id": 1242,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "netherlands",
+      "keywords": ["netherlands", "zandvoort"],
+      "id": 1243,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "italy",
+      "keywords": ["italy", "monza", "italia"],
+      "id": 1244,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "azerbaijan",
+      "keywords": ["azerbaijan", "azerbaidjan", "bakou", "bakku"],
+      "id": 1245,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "singapore",
+      "keywords": ["singapore"],
+      "id": 1246,
+      "sprint": true,
+      "isOver": false
+    },
+    {
+      "location": "united-states",
+      "keywords": ["united-states", "austin", "texas", "america"],
+      "id": 1247,
+      "sprint": true,
+      "isOver": false
+    },
+    {
+      "location": "mexico",
+      "keywords": ["mexico", "hermanos-rodríguez", "hermanos-rodriguez"],
+      "id": 1248,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "brazil",
+      "keywords": ["brazil", "sao-paulo"],
+      "id": 1249,
+      "sprint": true,
+      "isOver": false
+    },
+    {
+      "location": "las-vegas",
+      "keywords": ["las-vegas"],
+      "id": 1250,
+      "sprint": false,
+      "isOver": false
+    },
+    {
+      "location": "qatar",
+      "keywords": ["qatar", "lusail"],
+      "id": 1251,
+      "sprint": true,
+      "isOver": false
+    },
+    {
+      "location": "abu-dhabi",
+      "keywords": ["abu-dhabi", "abu-dahbi", "yas-marina", "marina"],
+      "id": 1252,
+      "sprint": false,
+      "isOver": false
+    }
+  ]
+}
