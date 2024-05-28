@@ -30,8 +30,8 @@ if __name__ == "__main__":
     location=location,
     circuit=circuit_name,
     session_name=session_name,
-    data_type=f"sprint-qualifying" if sprint else "race-qualifying",
-    exportname="sprint_qualifying" if sprint else "race_qualifying", 
+    data_type=f"sprint-grid" if sprint else "race-grid",
+    exportname="sprint_grid" if sprint else "race_grid", 
     year=year
   )
   

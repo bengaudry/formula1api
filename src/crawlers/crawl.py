@@ -1,6 +1,5 @@
 import subprocess
 
-
 seasons_structures = [
   {
     "year": 2024,
