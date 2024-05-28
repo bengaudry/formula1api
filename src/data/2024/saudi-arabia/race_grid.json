@@ -1,11 +1,11 @@
 {
-    "id": "b209c4d2-6236-4f77-8d57-d25878dfc65e",
+    "id": "5cb69bc0-897c-45e8-8133-2b74567db6fb",
     "weekendid": "1230",
-    "session_type": "race-qualifying",
+    "session_type": "race-grid",
     "year": "2024",
     "location": "saudi-arabia",
-    "gp_name": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX",
-    "session_name": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024 - QUALIFYING",
+    "gp_name": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024",
+    "session_name": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024 - STARTING GRID",
     "circuit": "Jeddah Corniche Circuit, Jeddah",
     "results": [
         {
@@ -17,12 +17,7 @@
                 "number": 1
             },
             "car": "Red Bull Racing Honda RBPT",
-            "times": {
-                "q1": "1:28.171",
-                "q2": "1:28.033",
-                "q3": "1:27.472"
-            },
-            "laps": 18
+            "time": "1:27.472"
         },
         {
             "position": 2,
@@ -33,12 +28,7 @@
                 "number": 16
             },
             "car": "Ferrari",
-            "times": {
-                "q1": "1:28.318",
-                "q2": "1:28.112",
-                "q3": "1:27.791"
-            },
-            "laps": 23
+            "time": "1:27.791"
         },
         {
             "position": 3,
@@ -49,12 +39,7 @@
                 "number": 11
             },
             "car": "Red Bull Racing Honda RBPT",
-            "times": {
-                "q1": "1:28.638",
-                "q2": "1:28.467",
-                "q3": "1:27.807"
-            },
-            "laps": 19
+            "time": "1:27.807"
         },
         {
             "position": 4,
@@ -65,12 +50,7 @@
                 "number": 14
             },
             "car": "Aston Martin Aramco Mercedes",
-            "times": {
-                "q1": "1:28.706",
-                "q2": "1:28.122",
-                "q3": "1:27.846"
-            },
-            "laps": 17
+            "time": "1:27.846"
         },
         {
             "position": 5,
@@ -81,12 +61,7 @@
                 "number": 81
             },
             "car": "McLaren Mercedes",
-            "times": {
-                "q1": "1:28.755",
-                "q2": "1:28.343",
-                "q3": "1:28.089"
-            },
-            "laps": 22
+            "time": "1:28.089"
         },
         {
             "position": 6,
@@ -97,12 +72,7 @@
                 "number": 4
             },
             "car": "McLaren Mercedes",
-            "times": {
-                "q1": "1:28.805",
-                "q2": "1:28.479",
-                "q3": "1:28.132"
-            },
-            "laps": 22
+            "time": "1:28.132"
         },
         {
             "position": 7,
@@ -113,12 +83,7 @@
                 "number": 63
             },
             "car": "Mercedes",
-            "times": {
-                "q1": "1:28.749",
-                "q2": "1:28.448",
-                "q3": "1:28.316"
-            },
-            "laps": 22
+            "time": "1:28.316"
         },
         {
             "position": 8,
@@ -129,12 +94,7 @@
                 "number": 44
             },
             "car": "Mercedes",
-            "times": {
-                "q1": "1:28.994",
-                "q2": "1:28.606",
-                "q3": "1:28.460"
-            },
-            "laps": 24
+            "time": "1:28.460"
         },
         {
             "position": 9,
@@ -145,12 +105,7 @@
                 "number": 22
             },
             "car": "RB Honda RBPT",
-            "times": {
-                "q1": "1:28.988",
-                "q2": "1:28.564",
-                "q3": "1:28.547"
-            },
-            "laps": 18
+            "time": "1:28.547"
         },
         {
             "position": 10,
@@ -161,12 +116,7 @@
                 "number": 18
             },
             "car": "Aston Martin Aramco Mercedes",
-            "times": {
-                "q1": "1:28.250",
-                "q2": "1:28.578",
-                "q3": "1:28.572"
-            },
-            "laps": 19
+            "time": "1:28.572"
         },
         {
             "position": 11,
@@ -177,12 +127,7 @@
                 "number": 38
             },
             "car": "Ferrari",
-            "times": {
-                "q1": "1:28.984",
-                "q2": "1:28.642",
-                "q3": null
-            },
-            "laps": 18
+            "time": "1:28.642"
         },
         {
             "position": 12,
@@ -193,12 +138,7 @@
                 "number": 23
             },
             "car": "Williams Mercedes",
-            "times": {
-                "q1": "1:29.107",
-                "q2": "1:28.980",
-                "q3": null
-            },
-            "laps": 16
+            "time": "1:28.980"
         },
         {
             "position": 13,
@@ -209,12 +149,7 @@
                 "number": 20
             },
             "car": "Haas Ferrari",
-            "times": {
-                "q1": "1:29.069",
-                "q2": "1:29.020",
-                "q3": null
-            },
-            "laps": 17
+            "time": "1:29.020"
         },
         {
             "position": 14,
@@ -225,12 +160,7 @@
                 "number": 3
             },
             "car": "RB Honda RBPT",
-            "times": {
-                "q1": "1:29.065",
-                "q2": "1:29.025",
-                "q3": null
-            },
-            "laps": 12
+            "time": "1:29.025"
         },
         {
             "position": 15,
@@ -241,12 +171,7 @@
                 "number": 27
             },
             "car": "Haas Ferrari",
-            "times": {
-                "q1": "1:29.055",
-                "q2": "DNF",
-                "q3": null
-            },
-            "laps": 10
+            "time": ""
         },
         {
             "position": 16,
@@ -257,12 +182,7 @@
                 "number": 77
             },
             "car": "Kick Sauber Ferrari",
-            "times": {
-                "q1": "1:29.179",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 9
+            "time": "1:29.179"
         },
         {
             "position": 17,
@@ -273,12 +193,7 @@
                 "number": 31
             },
             "car": "Alpine Renault",
-            "times": {
-                "q1": "1:29.475",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 10
+            "time": "1:29.475"
         },
         {
             "position": 18,
@@ -289,12 +204,7 @@
                 "number": 10
             },
             "car": "Alpine Renault",
-            "times": {
-                "q1": "1:29.479",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 9
+            "time": "1:29.479"
         },
         {
             "position": 19,
@@ -305,15 +215,10 @@
                 "number": 2
             },
             "car": "Williams Mercedes",
-            "times": {
-                "q1": "1:29.526",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 9
+            "time": "1:29.526"
         },
         {
-            "position": null,
+            "position": 20,
             "driver": {
                 "firstName": "Zhou",
                 "lastName": "Guanyu",
@@ -321,12 +226,7 @@
                 "number": 24
             },
             "car": "Kick Sauber Ferrari",
-            "times": {
-                "q1": "DNF",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 2
+            "time": ""
         }
     ]
 }

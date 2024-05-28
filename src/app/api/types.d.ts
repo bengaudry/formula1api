@@ -1,10 +1,23 @@
-type RaceResults = {
+type F1DataType = "fp1"
+| "fp2"
+| "fp3"
+| "sprint-qualifying"
+| "race-qualifying"
+| "sprint-results"
+| "race-results";
+
+type F1ApiData = {
+  id: string;
   weekendid: string;
+  session_type: F1DataType
   year: string;
   location: string;
-  circuit: string;
+  gp_name: string;
   session_name: string;
-  type: string;
+  circuit: string;
+};
+
+type RaceResults = F1ApiData & {
   results: Array<{
     position: number;
     driver: {
