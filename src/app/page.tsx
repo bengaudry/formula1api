@@ -1,3 +1,3 @@
-import { RaceResults } from "@/pages/raceResults";
+import { RaceResults } from "@/views/raceResults";
 
 export default () => <RaceResults />
