@@ -7,16 +7,16 @@ if __name__ == "__main__":
   id = sys.argv[3]
   
   call_crawlers(
-    ["qualifying.py", "race_result.py"],
+    ["qualifying.py", "race_result.py", "starting_grid.py"],
     year, location, id, sprint=True
   )
   
-  call_crawler(
-    "practice.py", f"{year} {location} 1 {id}"
+  call_crawlers(
+    ["qualifying.py", "race_result.py", "starting_grid.py"],
+    year, location, id
   )
   
-  call_crawlers(
-    ["qualifying.py", "race_result.py"],
-    year, location, id
+  call_crawler(
+    "practice.py", f"{year} {location} {id} 1"
   )
   

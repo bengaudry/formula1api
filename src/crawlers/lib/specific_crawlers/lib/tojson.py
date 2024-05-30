@@ -1,6 +1,5 @@
 import os
 import json
-import uuid
 from .common import cut_gp_name
 
 def exportJson(
@@ -14,9 +13,9 @@ def exportJson(
   year: int,
 ):
   final_data = {
-    "id": str(uuid.uuid4()),
+    "id": f"{id}_{data_type}",
     "weekendid": id,
-    "session_type": data_type,
+    "data_type": data_type,
     "year": year,
     "location": location,
     "gp_name": cut_gp_name(session_name),
