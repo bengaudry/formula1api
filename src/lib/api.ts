@@ -10,11 +10,19 @@ export async function fetchWeekendData<T>(
     const year = params.get("year");
     const location = params.get("location");
 
-    if (!year || !location) throw new Error("Parameter missing");
+    if (!year || !location)
+      throw new Error(
+        "Parameter missing : please provide either id or year and location"
+      );
 
     const dataDir = path.join(process.cwd(), "src", "data");
     const fileContent = await fs.readFile(
-      path.join(dataDir, year, location, `${apiName.replaceAll("-", "_")}.json`),
+      path.join(
+        dataDir,
+        year,
+        location,
+        `${apiName.replaceAll("-", "_")}.json`
+      ),
       "utf-8"
     );
     const data = JSON.parse(fileContent);

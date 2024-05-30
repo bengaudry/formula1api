@@ -49,6 +49,31 @@ type RaceGrid = F1ApiData & {
   }>;
 };
 
+type FreePractice = F1ApiData & {
+  results: Array<{
+    position: number;
+    driver: Driver;
+    car: string;
+    teamColor: string;
+    time: string;
+  }>;
+};
+
+type Qualifying = F1ApiData & {
+  results: Array<{
+    position: number;
+    driver: Driver;
+    car: string;
+    teamColor: string;
+    times: {
+      q1: string | null;
+      q2: string | null;
+      q3: string | null;
+    };
+    laps: 18;
+  }>;
+};
+
 type SeasonStructure = {
   year: number;
   weekends: Array<{

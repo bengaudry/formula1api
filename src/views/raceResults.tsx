@@ -1,26 +1,46 @@
 "use client";
+import { RaceResultsDisplayer } from "@/components/playground";
+import {
+  fetchRaceResults,
+  fetchSeasonStructure,
+} from "@/lib/playground/common";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
+const SprintLink = ({
+  weekendDetails,
+  location,
+}: {
+  weekendDetails: any;
+  location?: string;
+}) => (
+  <>
+    {weekendDetails.sprint && (
+      <Link
+        href={
+          location
+            ? `/playground/sprint-results?query=${location}`
+            : "/playground/sprint-results"
+        }
+        className="text-center mx-auto underline w-full"
+      >
+        See sprint results
+      </Link>
+    )}
+  </>
+);
+
 export function RaceResults() {
+  const params = useSearchParams();
+  const query = params.get("query") ?? null;
+
   const [data, setData] = useState<
     RaceResults | null | { isOver: false; name: string }
   >(null);
-  const [selectedLocation, setSelectedLocation] = useState("monaco");
+  const [selectedLocation, setSelectedLocation] = useState(query ?? "monaco");
   const [selectedYear, setSelectedYear] = useState(2024);
-
-  async function fetchSeasonStructure(year: number) {
-    const response = await fetch(`/api/season-structure?year=${year}`);
-    if (!response.ok) throw new Error("Failed to fetch season structure");
-    return response.json();
-  }
-
-  async function fetchRaceResults(year: number, location: string) {
-    const response = await fetch(
-      `/api/race-results?year=${year}&location=${location}`
-    );
-    if (!response.ok) throw new Error("Failed to fetch race results");
-    return response.json();
-  }
+  const [wekeendDetails, setWeekendDetails] = useState<any>(null);
 
   async function getRaceData() {
     try {
@@ -35,7 +55,7 @@ export function RaceResults() {
       );
 
       if (!weekend) throw new Error("Location not found");
-
+      setWeekendDetails(weekend);
       if (weekend.isOver) {
         const raceResults = await fetchRaceResults(
           selectedYear,
@@ -49,7 +69,7 @@ export function RaceResults() {
           name: weekend.location.replaceAll("-", " "),
         });
     } catch (error) {
-      console.error(error);
+      setData(null);
     }
   }
 
@@ -74,8 +94,14 @@ export function RaceResults() {
       </div>
       {!data || "isOver" in data ? (
         <p className="text-center">
-          The results for <span className="capitalize">{data?.name}</span> are
-          not available yet
+          {!data ? (
+            "This session does not exist in our database"
+          ) : (
+            <>
+              The results for <span className="capitalize">{data?.name}</span>{" "}
+              are not available yet
+            </>
+          )}
         </p>
       ) : (
         <>
@@ -84,48 +110,12 @@ export function RaceResults() {
               {data?.session_name}
             </h1>
             <p className="text-neutral-400">{data?.circuit}</p>
+            <SprintLink
+              weekendDetails={wekeendDetails}
+              location={wekeendDetails?.location}
+            />
           </header>
-
-          <ul className="max-w-screen-md mx-auto px-2">
-            {data?.results.map(
-              (
-                { position, car, teamColor, driver, laps, points, time },
-                idx
-              ) => (
-                <li
-                  key={idx}
-                  className={`grid grid-cols-12 gap-2 ${
-                    idx % 2 === 0 ? "bg-neutral-800" : ""
-                  } px-4 py-1 rounded-md`}
-                >
-                  <span className="col-span-1 md:col-span-1">
-                    {position ?? "-"}
-                  </span>
-                  <span
-                    className="col-span-2 md:col-span-1 flex items-center"
-                    title={`${driver.firstName} ${driver.lastName}`}
-                  >
-                    <span
-                      className={`inline-block h-full w-2 rounded-full mr-1`}
-                      style={{ backgroundColor: teamColor }}
-                    />
-                    {driver.abbr}
-                  </span>
-                  <span className="hidden md:inline-block md:col-span-5 whitespace-nowrap overflow-hidden">
-                    {car}
-                  </span>
-                  <span className="col-span-5 md:col-span-3 whitespace-nowrap overflow-hidden">
-                    {time}
-                  </span>
-                  <span className="col-span-2 md:col-span-1">{laps}</span>
-                  <span className="col-span-2 md:col-span-1">
-                    {points > 0 && "+"}
-                    {points}
-                  </span>
-                </li>
-              )
-            )}
-          </ul>
+          {data && !("isOver" in data) && <RaceResultsDisplayer data={data} />}
         </>
       )}
     </div>
