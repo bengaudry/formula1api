@@ -72,97 +72,101 @@ function ResizableColumnsContainer({
         value={yearQuery}
         onChange={({ target }) => setYearQuery(target.value)}
       />
-      <Container style={{ background: "#80808080" }}>
-        <Section minSize={50}>
-          <ul className="flex flex-col w-full h-max whitespace-nowrap">
-            <li className="px-2 py-1 bg-red-800">Practice 1</li>
-            {fp1Data?.results?.map(
-              ({ car, driver, position, teamColor, time }) => (
-                <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
-                  <div>
-                    <span
-                      className="inline-block h-5 w-2 mr-1 rounded-full"
-                      style={{ backgroundColor: teamColor }}
-                    />
-                    {driver.abbr}
-                  </div>
-                  {time} {showTeams && <>- {car}</>}
-                </li>
-              )
-            )}
-          </ul>
-        </Section>
-        <Bar
-          size={5}
-          style={{ background: "currentColor", cursor: "e-resize" }}
-        />
-        <Section minSize={100}>
-          <ul className="flex flex-col w-full h-max whitespace-nowrap">
-            <li className="px-2 py-1 bg-red-800">Practice 2</li>
-            {fp2Data?.results?.map(
-              ({ car, driver, position, teamColor, time }) => (
-                <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
-                  <div>
-                    <span
-                      className="inline-block h-5 w-2 mr-1 rounded-full"
-                      style={{ backgroundColor: teamColor }}
-                    />
-                    {driver.abbr}
-                  </div>
-                  {time} {showTeams && <>- {car}</>}
-                </li>
-              )
-            )}
-          </ul>
-        </Section>
-        <Bar
-          size={5}
-          style={{ background: "currentColor", cursor: "e-resize" }}
-        />
-        <Section minSize={100}>
-          <ul className="flex flex-col w-full h-max whitespace-nowrap">
-            <li className="px-2 py-1 bg-red-800">Practice 3</li>
-            {fp3Data?.results?.map(
-              ({ car, driver, position, teamColor, time }) => (
-                <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
-                  <div>
-                    <span
-                      className="inline-block h-5 w-2 mr-1 rounded-full"
-                      style={{ backgroundColor: teamColor }}
-                    />
-                    {driver.abbr}
-                  </div>
-                  {time} {showTeams && <>- {car}</>}
-                </li>
-              )
-            )}
-          </ul>
-        </Section>
-        <Bar
-          size={5}
-          style={{ background: "currentColor", cursor: "e-resize" }}
-        />
-        <Section minSize={100}>
-          <ul className="flex flex-col w-full h-max whitespace-nowrap">
-            <li className="px-2 py-1 bg-red-800">Qualifying</li>
-            {qualifyingData?.results?.map(
-              ({ car, driver, position, teamColor, times }) => (
-                <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
-                  <div>
-                    <span
-                      className="inline-block h-5 w-2 mr-1 rounded-full"
-                      style={{ backgroundColor: teamColor }}
-                    />
-                    {driver.abbr}
-                  </div>
-                  {times.q3 ?? times.q2 ?? times.q1 ?? "No time"}{" "}
-                  {showTeams && <>- {car}</>}
-                </li>
-              )
-            )}
-          </ul>
-        </Section>
-      </Container>
+      <div className="overflow-x-auto">
+        <div className="min-w-[800px] overflow-x-auto">
+          <Container style={{ background: "#80808080" }} className="w-full">
+            <Section minSize={50}>
+              <ul className="flex flex-col w-full h-max whitespace-nowrap">
+                <li className="px-2 py-1 bg-red-800">Practice 1</li>
+                {fp1Data?.results?.map(
+                  ({ car, driver, position, teamColor, time }) => (
+                    <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
+                      <div>
+                        <span
+                          className="inline-block h-5 w-2 mr-1 rounded-full"
+                          style={{ backgroundColor: teamColor }}
+                        />
+                        {driver.abbr}
+                      </div>
+                      {time} {showTeams && <>- {car}</>}
+                    </li>
+                  )
+                )}
+              </ul>
+            </Section>
+            <Bar
+              size={5}
+              style={{ background: "currentColor", cursor: "e-resize" }}
+            />
+            <Section minSize={100}>
+              <ul className="flex flex-col w-full h-max whitespace-nowrap">
+                <li className="px-2 py-1 bg-red-800">Practice 2</li>
+                {fp2Data?.results?.map(
+                  ({ car, driver, position, teamColor, time }) => (
+                    <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
+                      <div>
+                        <span
+                          className="inline-block h-5 w-2 mr-1 rounded-full"
+                          style={{ backgroundColor: teamColor }}
+                        />
+                        {driver.abbr}
+                      </div>
+                      {time} {showTeams && <>- {car}</>}
+                    </li>
+                  )
+                )}
+              </ul>
+            </Section>
+            <Bar
+              size={5}
+              style={{ background: "currentColor", cursor: "e-resize" }}
+            />
+            <Section minSize={100}>
+              <ul className="flex flex-col w-full h-max whitespace-nowrap">
+                <li className="px-2 py-1 bg-red-800">Practice 3</li>
+                {fp3Data?.results?.map(
+                  ({ car, driver, position, teamColor, time }) => (
+                    <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
+                      <div>
+                        <span
+                          className="inline-block h-5 w-2 mr-1 rounded-full"
+                          style={{ backgroundColor: teamColor }}
+                        />
+                        {driver.abbr}
+                      </div>
+                      {time} {showTeams && <>- {car}</>}
+                    </li>
+                  )
+                )}
+              </ul>
+            </Section>
+            <Bar
+              size={5}
+              style={{ background: "currentColor", cursor: "e-resize" }}
+            />
+            <Section minSize={100}>
+              <ul className="flex flex-col w-full h-max whitespace-nowrap">
+                <li className="px-2 py-1 bg-red-800">Qualifying</li>
+                {qualifyingData?.results?.map(
+                  ({ car, driver, position, teamColor, times }) => (
+                    <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
+                      <div>
+                        <span
+                          className="inline-block h-5 w-2 mr-1 rounded-full"
+                          style={{ backgroundColor: teamColor }}
+                        />
+                        {driver.abbr}
+                      </div>
+                      {times.q3 ?? times.q2 ?? times.q1 ?? "No time"}{" "}
+                      {showTeams && <>- {car}</>}
+                    </li>
+                  )
+                )}
+              </ul>
+            </Section>
+          </Container>
+        </div>
+      </div>
     </>
   );
 }
