@@ -35,7 +35,7 @@ export function SprintResults() {
 
       const fLocation = selectedLocation.toLowerCase().replaceAll(" ", "-");
 
-      const weekend = seasonStructure.weekends.find(({ keywords }) =>
+      const weekend = seasonStructure.grands_prix.find(({ keywords }) =>
         keywords.includes(fLocation)
       );
 

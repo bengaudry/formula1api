@@ -1,353 +1,336 @@
-[
-    {
-        "id": 1000,
-        "href": "https://www.formula1.com/en/racing/2019/Australia.html",
-        "location": "australia",
-        "keywords": [
-            "albert-park",
-            "australian",
-            "australia",
-            "melbourne"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "15",
-        "end_date": "17",
-        "month": "Mar",
-        "isOver": true,
-        "gp_name": "FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2019"
-    },
-    {
-        "id": 1001,
-        "href": "https://www.formula1.com/en/racing/2019/Bahrain.html",
-        "location": "bahrain",
-        "keywords": [
-            "sakhir",
-            "bahrain"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "29",
-        "end_date": "31",
-        "month": "Mar",
-        "isOver": true,
-        "gp_name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2019"
-    },
-    {
-        "id": 1002,
-        "href": "https://www.formula1.com/en/racing/2019/China.html",
-        "location": "china",
-        "keywords": [
-            "shanghai",
-            "chinese",
-            "china"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "12",
-        "end_date": "14",
-        "month": "Apr",
-        "isOver": true,
-        "gp_name": "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2019"
-    },
-    {
-        "id": 1003,
-        "href": "https://www.formula1.com/en/racing/2019/Azerbaijan.html",
-        "location": "azerbaijan",
-        "keywords": [
-            "baku",
-            "bakku",
-            "azerbaijan"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "26",
-        "end_date": "28",
-        "month": "Apr",
-        "isOver": true,
-        "gp_name": "FORMULA 1 SOCAR AZERBAIJAN GRAND PRIX 2019"
-    },
-    {
-        "id": 1004,
-        "href": "https://www.formula1.com/en/racing/2019/Spain.html",
-        "location": "spain",
-        "keywords": [
-            "catalunya",
-            "spanish",
-            "spain"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "10",
-        "end_date": "12",
-        "month": "May",
-        "isOver": true,
-        "gp_name": "FORMULA 1 EMIRATES GRAN PREMIO DE ESPA\u00d1A 2019"
-    },
-    {
-        "id": 1005,
-        "href": "https://www.formula1.com/en/racing/2019/Monaco.html",
-        "location": "monaco",
-        "keywords": [
-            "monaco",
-            "monte-carlo"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "23",
-        "end_date": "26",
-        "month": "May",
-        "isOver": true,
-        "gp_name": "FORMULA 1 GRAND PRIX DE MONACO 2019"
-    },
-    {
-        "id": 1006,
-        "href": "https://www.formula1.com/en/racing/2019/Canada.html",
-        "location": "canada",
-        "keywords": [
-            "canada"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "07",
-        "end_date": "09",
-        "month": "Jun",
-        "isOver": true,
-        "gp_name": "FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2019"
-    },
-    {
-        "id": 1007,
-        "href": "https://www.formula1.com/en/racing/2019/France.html",
-        "location": "france",
-        "keywords": [
-            "france"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "21",
-        "end_date": "23",
-        "month": "Jun",
-        "isOver": true,
-        "gp_name": "FORMULA 1 PIRELLI GRAND PRIX DE FRANCE 2019"
-    },
-    {
-        "id": 1008,
-        "href": "https://www.formula1.com/en/racing/2019/Austria.html",
-        "location": "austria",
-        "keywords": [
-            "red-bull-ring",
-            "austrian",
-            "austria"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "28",
-        "end_date": "30",
-        "month": "Jun",
-        "isOver": true,
-        "gp_name": "FORMULA 1 MYWORLD GROSSER PREIS VON \u00d6STERREICH 2019"
-    },
-    {
-        "id": 1009,
-        "href": "https://www.formula1.com/en/racing/2019/Great_Britain.html",
-        "location": "great-britain",
-        "keywords": [
-            "great-britain"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "12",
-        "end_date": "14",
-        "month": "Jul",
-        "isOver": true,
-        "gp_name": "FORMULA 1 ROLEX BRITISH GRAND PRIX 2019"
-    },
-    {
-        "id": 1010,
-        "href": "https://www.formula1.com/en/racing/2019/Germany.html",
-        "location": "germany",
-        "keywords": [
-            "nurburgring",
-            "eifel",
-            "germany"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "26",
-        "end_date": "28",
-        "month": "Jul",
-        "isOver": true,
-        "gp_name": "FORMULA 1 MERCEDES-BENZ GROSSER PREIS VON DEUTSCHLAND 2019"
-    },
-    {
-        "id": 1011,
-        "href": "https://www.formula1.com/en/racing/2019/Hungary.html",
-        "location": "hungary",
-        "keywords": [
-            "hungaroring",
-            "hungarian",
-            "hungary"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "02",
-        "end_date": "04",
-        "month": "Aug",
-        "isOver": true,
-        "gp_name": "FORMULA 1 ROLEX MAGYAR NAGYD\u00cdJ 2019"
-    },
-    {
-        "id": 1012,
-        "href": "https://www.formula1.com/en/racing/2019/Belgium.html",
-        "location": "belgium",
-        "keywords": [
-            "spa",
-            "spa-francorchamps",
-            "belgian",
-            "belgium"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "30",
-        "end_date": "01",
-        "month": "Aug-Sep",
-        "isOver": true,
-        "gp_name": "FORMULA 1 JOHNNIE WALKER BELGIAN GRAND PRIX 2019"
-    },
-    {
-        "id": 1013,
-        "href": "https://www.formula1.com/en/racing/2019/Italy.html",
-        "location": "italy",
-        "keywords": [
-            "monza",
-            "italian",
-            "italy"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "06",
-        "end_date": "08",
-        "month": "Sep",
-        "isOver": true,
-        "gp_name": "FORMULA 1 GRAN PREMIO HEINEKEN D'ITALIA 2019"
-    },
-    {
-        "id": 1014,
-        "href": "https://www.formula1.com/en/racing/2019/Singapore.html",
-        "location": "singapore",
-        "keywords": [
-            "marina-bay",
-            "singapore"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "20",
-        "end_date": "22",
-        "month": "Sep",
-        "isOver": true,
-        "gp_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2019"
-    },
-    {
-        "id": 1015,
-        "href": "https://www.formula1.com/en/racing/2019/Russia.html",
-        "location": "russia",
-        "keywords": [
-            "sochi",
-            "russian",
-            "russia"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "27",
-        "end_date": "29",
-        "month": "Sep",
-        "isOver": true,
-        "gp_name": "FORMULA 1 VTB RUSSIAN GRAND PRIX 2019"
-    },
-    {
-        "id": 1016,
-        "href": "https://www.formula1.com/en/racing/2019/Japan.html",
-        "location": "japan",
-        "keywords": [
-            "suzuka",
-            "japanese",
-            "japan"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "11",
-        "end_date": "13",
-        "month": "Oct",
-        "isOver": true,
-        "gp_name": "FORMULA 1 JAPANESE GRAND PRIX 2019"
-    },
-    {
-        "id": 1017,
-        "href": "https://www.formula1.com/en/racing/2019/Mexico.html",
-        "location": "mexico",
-        "keywords": [
-            "mexico-city",
-            "mexican",
-            "mexico"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "25",
-        "end_date": "27",
-        "month": "Oct",
-        "isOver": true,
-        "gp_name": "FORMULA 1 GRAN PREMIO DE M\u00c9XICO 2019"
-    },
-    {
-        "id": 1018,
-        "href": "https://www.formula1.com/en/racing/2019/United_States.html",
-        "location": "united-states",
-        "keywords": [
-            "cota",
-            "austin",
-            "united-states",
-            "usa"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "01",
-        "end_date": "03",
-        "month": "Nov",
-        "isOver": true,
-        "gp_name": "FORMULA 1 EMIRATES UNITED STATES GRAND PRIX 2019"
-    },
-    {
-        "id": 1019,
-        "href": "https://www.formula1.com/en/racing/2019/Brazil.html",
-        "location": "brazil",
-        "keywords": [
-            "interlagos",
-            "brazilian",
-            "brazil"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "15",
-        "end_date": "17",
-        "month": "Nov",
-        "isOver": true,
-        "gp_name": "FORMULA 1 HEINEKEN GRANDE PR\u00caMIO DO BRASIL 2019"
-    },
-    {
-        "id": 1020,
-        "href": "https://www.formula1.com/en/racing/2019/United_Arab_Emirates.html",
-        "location": "abu-dhabi",
-        "keywords": [
-            "yas-marina",
-            "abu-dhabi",
-            "uae"
-        ],
-        "sprint": false,
-        "year": 2019,
-        "start_date": "29",
-        "end_date": "01",
-        "month": "Nov-Dec",
-        "isOver": true,
-        "gp_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2019"
-    }
-]
+{
+    "year": 2019,
+    "gp_total": 21,
+    "grands_prix": [
+        {
+            "id": 1000,
+            "href": "https://www.formula1.com/en/racing/2019/Australia.html",
+            "location": "australia",
+            "keywords": [
+                "albert-park",
+                "australian",
+                "australia",
+                "melbourne"
+            ],
+            "sprint": false,
+            "start_date": "15",
+            "end_date": "17",
+            "month": "Mar",
+            "isOver": true,
+            "gp_name": "FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2019"
+        },
+        {
+            "id": 1001,
+            "href": "https://www.formula1.com/en/racing/2019/Bahrain.html",
+            "location": "bahrain",
+            "keywords": [
+                "sakhir",
+                "bahrain"
+            ],
+            "sprint": false,
+            "start_date": "29",
+            "end_date": "31",
+            "month": "Mar",
+            "isOver": true,
+            "gp_name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2019"
+        },
+        {
+            "id": 1002,
+            "href": "https://www.formula1.com/en/racing/2019/China.html",
+            "location": "china",
+            "keywords": [
+                "shanghai",
+                "chinese",
+                "china"
+            ],
+            "sprint": false,
+            "start_date": "12",
+            "end_date": "14",
+            "month": "Apr",
+            "isOver": true,
+            "gp_name": "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2019"
+        },
+        {
+            "id": 1003,
+            "href": "https://www.formula1.com/en/racing/2019/Azerbaijan.html",
+            "location": "azerbaijan",
+            "keywords": [
+                "baku",
+                "bakku",
+                "azerbaijan"
+            ],
+            "sprint": false,
+            "start_date": "26",
+            "end_date": "28",
+            "month": "Apr",
+            "isOver": true,
+            "gp_name": "FORMULA 1 SOCAR AZERBAIJAN GRAND PRIX 2019"
+        },
+        {
+            "id": 1004,
+            "href": "https://www.formula1.com/en/racing/2019/Spain.html",
+            "location": "spain",
+            "keywords": [
+                "catalunya",
+                "spanish",
+                "spain"
+            ],
+            "sprint": false,
+            "start_date": "10",
+            "end_date": "12",
+            "month": "May",
+            "isOver": true,
+            "gp_name": "FORMULA 1 EMIRATES GRAN PREMIO DE ESPA\u00d1A 2019"
+        },
+        {
+            "id": 1005,
+            "href": "https://www.formula1.com/en/racing/2019/Monaco.html",
+            "location": "monaco",
+            "keywords": [
+                "monaco",
+                "monte-carlo"
+            ],
+            "sprint": false,
+            "start_date": "23",
+            "end_date": "26",
+            "month": "May",
+            "isOver": true,
+            "gp_name": "FORMULA 1 GRAND PRIX DE MONACO 2019"
+        },
+        {
+            "id": 1006,
+            "href": "https://www.formula1.com/en/racing/2019/Canada.html",
+            "location": "canada",
+            "keywords": [
+                "canada"
+            ],
+            "sprint": false,
+            "start_date": "07",
+            "end_date": "09",
+            "month": "Jun",
+            "isOver": true,
+            "gp_name": "FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2019"
+        },
+        {
+            "id": 1007,
+            "href": "https://www.formula1.com/en/racing/2019/France.html",
+            "location": "france",
+            "keywords": [
+                "france"
+            ],
+            "sprint": false,
+            "start_date": "21",
+            "end_date": "23",
+            "month": "Jun",
+            "isOver": true,
+            "gp_name": "FORMULA 1 PIRELLI GRAND PRIX DE FRANCE 2019"
+        },
+        {
+            "id": 1008,
+            "href": "https://www.formula1.com/en/racing/2019/Austria.html",
+            "location": "austria",
+            "keywords": [
+                "red-bull-ring",
+                "austrian",
+                "austria"
+            ],
+            "sprint": false,
+            "start_date": "28",
+            "end_date": "30",
+            "month": "Jun",
+            "isOver": true,
+            "gp_name": "FORMULA 1 MYWORLD GROSSER PREIS VON \u00d6STERREICH 2019"
+        },
+        {
+            "id": 1009,
+            "href": "https://www.formula1.com/en/racing/2019/Great_Britain.html",
+            "location": "great-britain",
+            "keywords": [
+                "great-britain"
+            ],
+            "sprint": false,
+            "start_date": "12",
+            "end_date": "14",
+            "month": "Jul",
+            "isOver": true,
+            "gp_name": "FORMULA 1 ROLEX BRITISH GRAND PRIX 2019"
+        },
+        {
+            "id": 1010,
+            "href": "https://www.formula1.com/en/racing/2019/Germany.html",
+            "location": "germany",
+            "keywords": [
+                "nurburgring",
+                "eifel",
+                "germany"
+            ],
+            "sprint": false,
+            "start_date": "26",
+            "end_date": "28",
+            "month": "Jul",
+            "isOver": true,
+            "gp_name": "FORMULA 1 MERCEDES-BENZ GROSSER PREIS VON DEUTSCHLAND 2019"
+        },
+        {
+            "id": 1011,
+            "href": "https://www.formula1.com/en/racing/2019/Hungary.html",
+            "location": "hungary",
+            "keywords": [
+                "hungaroring",
+                "hungarian",
+                "hungary"
+            ],
+            "sprint": false,
+            "start_date": "02",
+            "end_date": "04",
+            "month": "Aug",
+            "isOver": true,
+            "gp_name": "FORMULA 1 ROLEX MAGYAR NAGYD\u00cdJ 2019"
+        },
+        {
+            "id": 1012,
+            "href": "https://www.formula1.com/en/racing/2019/Belgium.html",
+            "location": "belgium",
+            "keywords": [
+                "spa",
+                "spa-francorchamps",
+                "belgian",
+                "belgium"
+            ],
+            "sprint": false,
+            "start_date": "30",
+            "end_date": "01",
+            "month": "Aug-Sep",
+            "isOver": true,
+            "gp_name": "FORMULA 1 JOHNNIE WALKER BELGIAN GRAND PRIX 2019"
+        },
+        {
+            "id": 1013,
+            "href": "https://www.formula1.com/en/racing/2019/Italy.html",
+            "location": "italy",
+            "keywords": [
+                "monza",
+                "italian",
+                "italy"
+            ],
+            "sprint": false,
+            "start_date": "06",
+            "end_date": "08",
+            "month": "Sep",
+            "isOver": true,
+            "gp_name": "FORMULA 1 GRAN PREMIO HEINEKEN D'ITALIA 2019"
+        },
+        {
+            "id": 1014,
+            "href": "https://www.formula1.com/en/racing/2019/Singapore.html",
+            "location": "singapore",
+            "keywords": [
+                "marina-bay",
+                "singapore"
+            ],
+            "sprint": false,
+            "start_date": "20",
+            "end_date": "22",
+            "month": "Sep",
+            "isOver": true,
+            "gp_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2019"
+        },
+        {
+            "id": 1015,
+            "href": "https://www.formula1.com/en/racing/2019/Russia.html",
+            "location": "russia",
+            "keywords": [
+                "sochi",
+                "russian",
+                "russia"
+            ],
+            "sprint": false,
+            "start_date": "27",
+            "end_date": "29",
+            "month": "Sep",
+            "isOver": true,
+            "gp_name": "FORMULA 1 VTB RUSSIAN GRAND PRIX 2019"
+        },
+        {
+            "id": 1016,
+            "href": "https://www.formula1.com/en/racing/2019/Japan.html",
+            "location": "japan",
+            "keywords": [
+                "suzuka",
+                "japanese",
+                "japan"
+            ],
+            "sprint": false,
+            "start_date": "11",
+            "end_date": "13",
+            "month": "Oct",
+            "isOver": true,
+            "gp_name": "FORMULA 1 JAPANESE GRAND PRIX 2019"
+        },
+        {
+            "id": 1017,
+            "href": "https://www.formula1.com/en/racing/2019/Mexico.html",
+            "location": "mexico",
+            "keywords": [
+                "mexico-city",
+                "mexican",
+                "mexico"
+            ],
+            "sprint": false,
+            "start_date": "25",
+            "end_date": "27",
+            "month": "Oct",
+            "isOver": true,
+            "gp_name": "FORMULA 1 GRAN PREMIO DE M\u00c9XICO 2019"
+        },
+        {
+            "id": 1018,
+            "href": "https://www.formula1.com/en/racing/2019/United_States.html",
+            "location": "united-states",
+            "keywords": [
+                "cota",
+                "austin",
+                "united-states",
+                "usa"
+            ],
+            "sprint": false,
+            "start_date": "01",
+            "end_date": "03",
+            "month": "Nov",
+            "isOver": true,
+            "gp_name": "FORMULA 1 EMIRATES UNITED STATES GRAND PRIX 2019"
+        },
+        {
+            "id": 1019,
+            "href": "https://www.formula1.com/en/racing/2019/Brazil.html",
+            "location": "brazil",
+            "keywords": [
+                "interlagos",
+                "brazilian",
+                "brazil"
+            ],
+            "sprint": false,
+            "start_date": "15",
+            "end_date": "17",
+            "month": "Nov",
+            "isOver": true,
+            "gp_name": "FORMULA 1 HEINEKEN GRANDE PR\u00caMIO DO BRASIL 2019"
+        },
+        {
+            "id": 1020,
+            "href": "https://www.formula1.com/en/racing/2019/United_Arab_Emirates.html",
+            "location": "abu-dhabi",
+            "keywords": [
+                "yas-marina",
+                "abu-dhabi",
+                "uae"
+            ],
+            "sprint": false,
+            "start_date": "29",
+            "end_date": "01",
+            "month": "Nov-Dec",
+            "isOver": true,
+            "gp_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2019"
+        }
+    ]
+}

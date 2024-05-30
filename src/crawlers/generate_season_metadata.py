@@ -97,7 +97,6 @@ def crawl_metadata_by_year (year: int):
         "location": location,
         "keywords": [location] if len(keywords) <= 1 else keywords,
         "sprint": False,
-        "year": year,
         "start_date": card.find("span", class_="start-date").text,
         "end_date": card.find("span", class_="end-date").text,
         "month": card.find("span", class_="month-wrapper").text,
@@ -105,7 +104,11 @@ def crawl_metadata_by_year (year: int):
         "gp_name": card.find("div", class_="event-title").text.strip()
     })
     
-  return grands_prix
+  return {
+    "year": year,
+    "gp_total": len(grands_prix),
+    "grands_prix": grands_prix
+  }
 
 def crawl_and_export(year: int):
   metadata = crawl_metadata_by_year(year)

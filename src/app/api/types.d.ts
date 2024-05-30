@@ -76,7 +76,8 @@ type Qualifying = F1ApiData & {
 
 type SeasonStructure = {
   year: number;
-  weekends: Array<{
+  gp_total: number;
+  grands_prix: Array<{
     location: string;
     keywords: Array<string>;
     id: number;
