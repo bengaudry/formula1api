@@ -1,11 +1,11 @@
 {
-    "id": "1234_sprint-qualifying",
+    "id": "1234_sprint-grid",
     "weekendid": "1234",
-    "data_type": "sprint-qualifying",
+    "data_type": "sprint-grid",
     "year": "2024",
     "location": "miami",
     "gp_name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024",
-    "session_name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024 - SPRINT QUALIFYING",
+    "session_name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024 - SPRINT GRID",
     "circuit": "Miami International Autodrome, Miami",
     "results": [
         {
@@ -18,12 +18,7 @@
             },
             "car": "Red Bull Racing Honda RBPT",
             "teamColor": "rgb(54,113,198)",
-            "times": {
-                "q1": "1:28.194",
-                "q2": "1:28.001",
-                "q3": "1:27.641"
-            },
-            "laps": 12
+            "time": "1:27.641"
         },
         {
             "position": 2,
@@ -35,12 +30,7 @@
             },
             "car": "Ferrari",
             "teamColor": "rgb(232,0,32)",
-            "times": {
-                "q1": "1:28.537",
-                "q2": "1:27.977",
-                "q3": "1:27.749"
-            },
-            "laps": 17
+            "time": "1:27.749"
         },
         {
             "position": 3,
@@ -52,12 +42,7 @@
             },
             "car": "Red Bull Racing Honda RBPT",
             "teamColor": "rgb(54,113,198)",
-            "times": {
-                "q1": "1:28.681",
-                "q2": "1:27.865",
-                "q3": "1:27.876"
-            },
-            "laps": 11
+            "time": "1:27.876"
         },
         {
             "position": 4,
@@ -69,12 +54,7 @@
             },
             "car": "RB Honda RBPT",
             "teamColor": "rgb(102,146,255)",
-            "times": {
-                "q1": "1:28.700",
-                "q2": "1:28.122",
-                "q3": "1:28.044"
-            },
-            "laps": 14
+            "time": "1:28.044"
         },
         {
             "position": 5,
@@ -86,12 +66,7 @@
             },
             "car": "Ferrari",
             "teamColor": "rgb(232,0,32)",
-            "times": {
-                "q1": "1:28.435",
-                "q2": "1:28.262",
-                "q3": "1:28.103"
-            },
-            "laps": 16
+            "time": "1:28.103"
         },
         {
             "position": 6,
@@ -103,12 +78,7 @@
             },
             "car": "McLaren Mercedes",
             "teamColor": "rgb(255,128,0)",
-            "times": {
-                "q1": "1:28.056",
-                "q2": "1:28.163",
-                "q3": "1:28.161"
-            },
-            "laps": 16
+            "time": "1:28.161"
         },
         {
             "position": 7,
@@ -120,12 +90,7 @@
             },
             "car": "Aston Martin Aramco Mercedes",
             "teamColor": "rgb(34,153,113)",
-            "times": {
-                "q1": "1:28.807",
-                "q2": "1:28.323",
-                "q3": "1:28.375"
-            },
-            "laps": 15
+            "time": "1:28.375"
         },
         {
             "position": 8,
@@ -137,12 +102,7 @@
             },
             "car": "Aston Martin Aramco Mercedes",
             "teamColor": "rgb(34,153,113)",
-            "times": {
-                "q1": "1:28.192",
-                "q2": "1:28.189",
-                "q3": "1:28.419"
-            },
-            "laps": 14
+            "time": "1:28.419"
         },
         {
             "position": 9,
@@ -154,12 +114,7 @@
             },
             "car": "McLaren Mercedes",
             "teamColor": "rgb(255,128,0)",
-            "times": {
-                "q1": "1:27.939",
-                "q2": "1:27.597",
-                "q3": "1:28.472"
-            },
-            "laps": 12
+            "time": "1:28.472"
         },
         {
             "position": 10,
@@ -171,12 +126,7 @@
             },
             "car": "Haas Ferrari",
             "teamColor": "rgb(182,186,189)",
-            "times": {
-                "q1": "1:29.040",
-                "q2": "1:28.330",
-                "q3": "1:28.476"
-            },
-            "laps": 15
+            "time": "1:28.476"
         },
         {
             "position": 11,
@@ -188,12 +138,7 @@
             },
             "car": "Mercedes",
             "teamColor": "rgb(39,244,210)",
-            "times": {
-                "q1": "1:28.387",
-                "q2": "1:28.343",
-                "q3": null
-            },
-            "laps": 12
+            "time": "1:28.343"
         },
         {
             "position": 12,
@@ -205,12 +150,7 @@
             },
             "car": "Mercedes",
             "teamColor": "rgb(39,244,210)",
-            "times": {
-                "q1": "1:28.736",
-                "q2": "1:28.371",
-                "q3": null
-            },
-            "laps": 12
+            "time": "1:28.371"
         },
         {
             "position": 13,
@@ -222,12 +162,7 @@
             },
             "car": "Alpine Renault",
             "teamColor": "rgb(0,147,204)",
-            "times": {
-                "q1": "1:28.873",
-                "q2": "1:28.379",
-                "q3": null
-            },
-            "laps": 12
+            "time": "1:28.379"
         },
         {
             "position": 14,
@@ -239,12 +174,7 @@
             },
             "car": "Haas Ferrari",
             "teamColor": "rgb(182,186,189)",
-            "times": {
-                "q1": "1:28.377",
-                "q2": "1:28.614",
-                "q3": null
-            },
-            "laps": 12
+            "time": "1:28.614"
         },
         {
             "position": 15,
@@ -256,12 +186,7 @@
             },
             "car": "RB Honda RBPT",
             "teamColor": "rgb(102,146,255)",
-            "times": {
-                "q1": "1:28.687",
-                "q2": "DNF",
-                "q3": null
-            },
-            "laps": 9
+            "time": ""
         },
         {
             "position": 16,
@@ -273,12 +198,7 @@
             },
             "car": "Alpine Renault",
             "teamColor": "rgb(0,147,204)",
-            "times": {
-                "q1": "1:29.185",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 6
+            "time": "1:29.185"
         },
         {
             "position": 17,
@@ -290,32 +210,10 @@
             },
             "car": "Kick Sauber Ferrari",
             "teamColor": "rgb(82,226,82)",
-            "times": {
-                "q1": "1:29.267",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 6
+            "time": "1:29.267"
         },
         {
             "position": 18,
-            "driver": {
-                "firstName": "Valtteri",
-                "lastName": "Bottas",
-                "abbr": "BOT",
-                "number": 77
-            },
-            "car": "Kick Sauber Ferrari",
-            "teamColor": "rgb(82,226,82)",
-            "times": {
-                "q1": "1:29.360",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 7
-        },
-        {
-            "position": 19,
             "driver": {
                 "firstName": "Logan",
                 "lastName": "Sargeant",
@@ -324,12 +222,19 @@
             },
             "car": "Williams Mercedes",
             "teamColor": "rgb(100,196,255)",
-            "times": {
-                "q1": "1:29.551",
-                "q2": null,
-                "q3": null
+            "time": "1:29.551"
+        },
+        {
+            "position": 19,
+            "driver": {
+                "firstName": "Valtteri",
+                "lastName": "Bottas",
+                "abbr": "BOT",
+                "number": 77
             },
-            "laps": 6
+            "car": "Kick Sauber Ferrari",
+            "teamColor": "rgb(82,226,82)",
+            "time": "1:29.360"
         },
         {
             "position": 20,
@@ -341,12 +246,7 @@
             },
             "car": "Williams Mercedes",
             "teamColor": "rgb(100,196,255)",
-            "times": {
-                "q1": "1:29.858",
-                "q2": null,
-                "q3": null
-            },
-            "laps": 6
+            "time": "1:29.858"
         }
     ]
 }

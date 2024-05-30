@@ -1,7 +1,7 @@
 {
-    "id": "e7f8984b-ebe6-4a6f-b7b1-00f9c0d8865d",
+    "id": "1234_race-qualifying",
     "weekendid": "1234",
-    "session_type": "race-qualifying",
+    "data_type": "race-qualifying",
     "year": "2024",
     "location": "miami",
     "gp_name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX",

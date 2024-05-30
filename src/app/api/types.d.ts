@@ -1,15 +1,25 @@
-type F1DataType = "fp1"
-| "fp2"
-| "fp3"
-| "sprint-qualifying"
-| "race-qualifying"
-| "sprint-results"
-| "race-results";
+type F1DataType =
+  | "fp1"
+  | "fp2"
+  | "fp3"
+  | "sprint-qualifying"
+  | "race-qualifying"
+  | "race-grid"
+  | "sprint-grid"
+  | "sprint-results"
+  | "race-results";
+
+type Driver = {
+  firstName: string;
+  lastName: string;
+  abbr: string;
+  number: number;
+};
 
 type F1ApiData = {
   id: string;
   weekendid: string;
-  session_type: F1DataType
+  session_type: F1DataType;
   year: string;
   location: string;
   gp_name: string;
@@ -20,17 +30,22 @@ type F1ApiData = {
 type RaceResults = F1ApiData & {
   results: Array<{
     position: number;
-    driver: {
-      firstName: string;
-      lastName: string;
-      abbr: string;
-      number: number;
-    };
+    driver: Driver;
     car: string;
     teamColor: string;
     laps: number;
     time: string;
     points: number;
+  }>;
+};
+
+type RaceGrid = F1ApiData & {
+  results: Array<{
+    position: number;
+    driver: Driver;
+    car: string;
+    teamColor: string;
+    time: string;
   }>;
 };
 
