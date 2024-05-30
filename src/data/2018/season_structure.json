@@ -1,0 +1,353 @@
+[
+    {
+        "id": 979,
+        "href": "https://www.formula1.com/en/racing/2018/Australia.html",
+        "location": "australia",
+        "keywords": [
+            "albert-park",
+            "australian",
+            "australia",
+            "melbourne"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "23",
+        "end_date": "25",
+        "month": "Mar",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 ROLEX AUSTRALIAN GRAND PRIX"
+    },
+    {
+        "id": 980,
+        "href": "https://www.formula1.com/en/racing/2018/Bahrain.html",
+        "location": "bahrain",
+        "keywords": [
+            "sakhir",
+            "bahrain"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "06",
+        "end_date": "08",
+        "month": "Apr",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 GULF AIR BAHRAIN GRAND PRIX"
+    },
+    {
+        "id": 981,
+        "href": "https://www.formula1.com/en/racing/2018/China.html",
+        "location": "china",
+        "keywords": [
+            "shanghai",
+            "chinese",
+            "china"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "13",
+        "end_date": "15",
+        "month": "Apr",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 HEINEKEN CHINESE GRAND PRIX"
+    },
+    {
+        "id": 982,
+        "href": "https://www.formula1.com/en/racing/2018/Azerbaijan.html",
+        "location": "azerbaijan",
+        "keywords": [
+            "baku",
+            "bakku",
+            "azerbaijan"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "27",
+        "end_date": "29",
+        "month": "Apr",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 AZERBAIJAN GRAND PRIX"
+    },
+    {
+        "id": 983,
+        "href": "https://www.formula1.com/en/racing/2018/Spain.html",
+        "location": "spain",
+        "keywords": [
+            "catalunya",
+            "spanish",
+            "spain"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "11",
+        "end_date": "13",
+        "month": "May",
+        "isOver": true,
+        "gp_name": "FORMULA 1 GRAN PREMIO DE ESPA\u00d1A EMIRATES 2018"
+    },
+    {
+        "id": 984,
+        "href": "https://www.formula1.com/en/racing/2018/Monaco.html",
+        "location": "monaco",
+        "keywords": [
+            "monaco",
+            "monte-carlo"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "24",
+        "end_date": "27",
+        "month": "May",
+        "isOver": true,
+        "gp_name": "FORMULA 1 GRAND PRIX DE MONACO 2018"
+    },
+    {
+        "id": 985,
+        "href": "https://www.formula1.com/en/racing/2018/Canada.html",
+        "location": "canada",
+        "keywords": [
+            "canada"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "08",
+        "end_date": "10",
+        "month": "Jun",
+        "isOver": true,
+        "gp_name": "FORMULA 1 GRAND PRIX HEINEKEN DU CANADA 2018"
+    },
+    {
+        "id": 986,
+        "href": "https://www.formula1.com/en/racing/2018/France.html",
+        "location": "france",
+        "keywords": [
+            "france"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "22",
+        "end_date": "24",
+        "month": "Jun",
+        "isOver": true,
+        "gp_name": "FORMULA 1 PIRELLI GRAND PRIX DE FRANCE 2018"
+    },
+    {
+        "id": 987,
+        "href": "https://www.formula1.com/en/racing/2018/Austria.html",
+        "location": "austria",
+        "keywords": [
+            "red-bull-ring",
+            "austrian",
+            "austria"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "29",
+        "end_date": "01",
+        "month": "Jun-Jul",
+        "isOver": true,
+        "gp_name": "FORMULA 1 EYETIME GROSSER PREIS VON \u00d6STERREICH 2018"
+    },
+    {
+        "id": 988,
+        "href": "https://www.formula1.com/en/racing/2018/Great_Britain.html",
+        "location": "great-britain",
+        "keywords": [
+            "great-britain"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "06",
+        "end_date": "08",
+        "month": "Jul",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 ROLEX BRITISH GRAND PRIX"
+    },
+    {
+        "id": 989,
+        "href": "https://www.formula1.com/en/racing/2018/Germany.html",
+        "location": "germany",
+        "keywords": [
+            "nurburgring",
+            "eifel",
+            "germany"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "20",
+        "end_date": "22",
+        "month": "Jul",
+        "isOver": true,
+        "gp_name": "FORMULA 1 EMIRATES GROSSER PREIS VON DEUTSCHLAND 2018"
+    },
+    {
+        "id": 990,
+        "href": "https://www.formula1.com/en/racing/2018/Hungary.html",
+        "location": "hungary",
+        "keywords": [
+            "hungaroring",
+            "hungarian",
+            "hungary"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "27",
+        "end_date": "29",
+        "month": "Jul",
+        "isOver": true,
+        "gp_name": "FORMULA 1 ROLEX MAGYAR NAGYD\u00cdJ 2018"
+    },
+    {
+        "id": 991,
+        "href": "https://www.formula1.com/en/racing/2018/Belgium.html",
+        "location": "belgium",
+        "keywords": [
+            "spa",
+            "spa-francorchamps",
+            "belgian",
+            "belgium"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "24",
+        "end_date": "26",
+        "month": "Aug",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 JOHNNIE WALKER BELGIAN GRAND PRIX"
+    },
+    {
+        "id": 992,
+        "href": "https://www.formula1.com/en/racing/2018/Italy.html",
+        "location": "italy",
+        "keywords": [
+            "monza",
+            "italian",
+            "italy"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "31",
+        "end_date": "02",
+        "month": "Aug-Sep",
+        "isOver": true,
+        "gp_name": "FORMULA 1 GRAN PREMIO HEINEKEN D'ITALIA 2018"
+    },
+    {
+        "id": 993,
+        "href": "https://www.formula1.com/en/racing/2018/Singapore.html",
+        "location": "singapore",
+        "keywords": [
+            "marina-bay",
+            "singapore"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "14",
+        "end_date": "16",
+        "month": "Sep",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 SINGAPORE AIRLINES SINGAPORE GRAND PRIX"
+    },
+    {
+        "id": 994,
+        "href": "https://www.formula1.com/en/racing/2018/Russia.html",
+        "location": "russia",
+        "keywords": [
+            "sochi",
+            "russian",
+            "russia"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "28",
+        "end_date": "30",
+        "month": "Sep",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 VTB RUSSIAN GRAND PRIX"
+    },
+    {
+        "id": 995,
+        "href": "https://www.formula1.com/en/racing/2018/Japan.html",
+        "location": "japan",
+        "keywords": [
+            "suzuka",
+            "japanese",
+            "japan"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "05",
+        "end_date": "07",
+        "month": "Oct",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 HONDA JAPANESE GRAND PRIX"
+    },
+    {
+        "id": 996,
+        "href": "https://www.formula1.com/en/racing/2018/United_States.html",
+        "location": "united-states",
+        "keywords": [
+            "cota",
+            "austin",
+            "united-states",
+            "usa"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "19",
+        "end_date": "21",
+        "month": "Oct",
+        "isOver": true,
+        "gp_name": "FORMULA 1 PIRELLI 2018 UNITED STATES GRAND PRIX"
+    },
+    {
+        "id": 997,
+        "href": "https://www.formula1.com/en/racing/2018/Mexico.html",
+        "location": "mexico",
+        "keywords": [
+            "mexico-city",
+            "mexican",
+            "mexico"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "26",
+        "end_date": "28",
+        "month": "Oct",
+        "isOver": true,
+        "gp_name": "FORMULA 1 GRAN PREMIO DE M\u00c9XICO 2018"
+    },
+    {
+        "id": 998,
+        "href": "https://www.formula1.com/en/racing/2018/Brazil.html",
+        "location": "brazil",
+        "keywords": [
+            "interlagos",
+            "brazilian",
+            "brazil"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "09",
+        "end_date": "11",
+        "month": "Nov",
+        "isOver": true,
+        "gp_name": "FORMULA 1 GRANDE PR\u00caMIO HEINEKEN DO BRASIL 2018"
+    },
+    {
+        "id": 999,
+        "href": "https://www.formula1.com/en/racing/2018/United_Arab_Emirates.html",
+        "location": "abu-dhabi",
+        "keywords": [
+            "yas-marina",
+            "abu-dhabi",
+            "uae"
+        ],
+        "sprint": false,
+        "year": 2018,
+        "start_date": "23",
+        "end_date": "25",
+        "month": "Nov",
+        "isOver": true,
+        "gp_name": "FORMULA 1 2018 ETIHAD AIRWAYS ABU DHABI GRAND PRIX"
+    }
+]
