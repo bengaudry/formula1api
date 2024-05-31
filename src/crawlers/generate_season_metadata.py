@@ -91,10 +91,18 @@ def crawl_metadata_by_year (year: int):
     if (card and "ROUND" in card.get("data-roundtext", [])):
       location = card.get("data-racecountryname").lower().replace(" ", "-")
       keywords = generate_keywords(location)
+      
+      images = card.find_all("img")
+      imgs = []
+      for image in images:
+        if image.get("src"):
+          imgs.append(f"{BASE_F1_URL}{image.get("src")}")
+      
       grands_prix.append({
         "id": int(card.get("data-meetingkey")),
-        "href": f"{BASE_F1_URL}{card.get("href")}",
+        "href": f"{BASE_F1_URL}{card.get("href")}" if card.get("href") else None,
         "location": location,
+        "images": imgs,
         "keywords": [location] if len(keywords) <= 1 else keywords,
         "sprint": False,
         "start_date": card.find("span", class_="start-date").text,
