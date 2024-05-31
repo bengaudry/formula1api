@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/components/ui/button";
 
 export default () => (
   <div>
@@ -15,13 +15,12 @@ export default () => (
 
     <main className="pt-28 px-4">
       <h3 className="text-2xl font-semibold mb-2">Api playground</h3>
-      <ul>
-        <li>
+      <div className="flex flex-col gap-2 max-w-48">
+          <Link href="/playground/search" variant="outline">Search -&gt;</Link>
           <Link href="/playground/race-results">Race results -&gt;</Link>
           <Link href="/playground/sprint-results">Sprint results -&gt;</Link>
-          <Link href="/playground/search">Search -&gt;</Link>
-        </li>
-      </ul>
+          <Link href="/playground/compare">Compare results -&gt;</Link>
+      </div>
     </main>
     {/* <RaceResults /> */}
   </div>

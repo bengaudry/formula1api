@@ -77,12 +77,12 @@ function ResizableColumnsContainer({
             value={locationQuery}
             onChange={({ target }) => setLocationQuery(target.value)}
           />
-          <Select onValueChange={setYearQuery}>
+          <Select onValueChange={setYearQuery} defaultValue={yearQuery}>
             <SelectTrigger>
               <SelectValue placeholder="Select a year" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="2024" defaultChecked>
+              <SelectItem value="2024">
                 2024
               </SelectItem>
             </SelectContent>
