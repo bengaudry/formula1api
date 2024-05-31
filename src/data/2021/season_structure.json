@@ -6,6 +6,9 @@
             "id": 1064,
             "href": "https://www.formula1.com/en/racing/2021/Bahrain.html",
             "location": "bahrain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir",
                 "bahrain"
@@ -21,6 +24,9 @@
             "id": 1065,
             "href": "https://www.formula1.com/en/racing/2021/EmiliaRomagna.html",
             "location": "emilia-romagna",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "imola",
                 "emilia-romagna"
@@ -36,6 +42,9 @@
             "id": 1066,
             "href": "https://www.formula1.com/en/racing/2021/Portugal.html",
             "location": "portugal",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "portugal"
             ],
@@ -50,6 +59,9 @@
             "id": 1086,
             "href": "https://www.formula1.com/en/racing/2021/Spain.html",
             "location": "spain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "catalunya",
                 "spanish",
@@ -66,6 +78,9 @@
             "id": 1067,
             "href": "https://www.formula1.com/en/racing/2021/Monaco.html",
             "location": "monaco",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monaco",
                 "monte-carlo"
@@ -81,6 +96,9 @@
             "id": 1068,
             "href": "https://www.formula1.com/en/racing/2021/Azerbaijan.html",
             "location": "azerbaijan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "baku",
                 "bakku",
@@ -97,6 +115,9 @@
             "id": 1070,
             "href": "https://www.formula1.com/en/racing/2021/France.html",
             "location": "france",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "france"
             ],
@@ -111,6 +132,9 @@
             "id": 1092,
             "href": "https://www.formula1.com/en/racing/2021/Styria.html",
             "location": "styria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "styrian",
                 "styria",
@@ -127,6 +151,9 @@
             "id": 1071,
             "href": "https://www.formula1.com/en/racing/2021/Austria.html",
             "location": "austria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "red-bull-ring",
                 "austrian",
@@ -143,6 +170,9 @@
             "id": 1072,
             "href": "https://www.formula1.com/en/racing/2021/Great_Britain.html",
             "location": "great-britain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "great-britain"
             ],
@@ -157,6 +187,9 @@
             "id": 1073,
             "href": "https://www.formula1.com/en/racing/2021/Hungary.html",
             "location": "hungary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "hungaroring",
                 "hungarian",
@@ -173,6 +206,9 @@
             "id": 1074,
             "href": "https://www.formula1.com/en/racing/2021/Belgium.html",
             "location": "belgium",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "spa",
                 "spa-francorchamps",
@@ -190,6 +226,9 @@
             "id": 1075,
             "href": "https://www.formula1.com/en/racing/2021/Netherlands.html",
             "location": "netherlands",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "zandvoort",
                 "dutch",
@@ -206,6 +245,9 @@
             "id": 1076,
             "href": "https://www.formula1.com/en/racing/2021/Italy.html",
             "location": "italy",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monza",
                 "italian",
@@ -222,6 +264,9 @@
             "id": 1077,
             "href": "https://www.formula1.com/en/racing/2021/Russia.html",
             "location": "russia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sochi",
                 "russian",
@@ -238,6 +283,9 @@
             "id": 1078,
             "href": "https://www.formula1.com/en/racing/2021/Turkey.html",
             "location": "turkey",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "turkey"
             ],
@@ -252,6 +300,9 @@
             "id": 1102,
             "href": "https://www.formula1.com/en/racing/2021/United_States.html",
             "location": "united-states",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "cota",
                 "austin",
@@ -269,6 +320,9 @@
             "id": 1103,
             "href": "https://www.formula1.com/en/racing/2021/Mexico.html",
             "location": "mexico",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "mexico-city",
                 "mexican",
@@ -285,6 +339,9 @@
             "id": 1104,
             "href": "https://www.formula1.com/en/racing/2021/Brazil.html",
             "location": "brazil",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "interlagos",
                 "brazilian",
@@ -301,6 +358,9 @@
             "id": 1105,
             "href": "https://www.formula1.com/en/racing/2021/Qatar.html",
             "location": "qatar",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "losail",
                 "qatar"
@@ -316,6 +376,9 @@
             "id": 1106,
             "href": "https://www.formula1.com/en/racing/2021/Saudi_Arabia.html",
             "location": "saudi-arabia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "jeddah",
                 "djedda",
@@ -334,6 +397,9 @@
             "id": 1107,
             "href": "https://www.formula1.com/en/racing/2021/United_Arab_Emirates.html",
             "location": "abu-dhabi",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "yas-marina",
                 "abu-dhabi",

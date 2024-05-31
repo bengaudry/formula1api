@@ -6,6 +6,9 @@
             "id": 979,
             "href": "https://www.formula1.com/en/racing/2018/Australia.html",
             "location": "australia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "albert-park",
                 "australian",
@@ -23,6 +26,9 @@
             "id": 980,
             "href": "https://www.formula1.com/en/racing/2018/Bahrain.html",
             "location": "bahrain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir",
                 "bahrain"
@@ -38,6 +44,9 @@
             "id": 981,
             "href": "https://www.formula1.com/en/racing/2018/China.html",
             "location": "china",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "shanghai",
                 "chinese",
@@ -54,6 +63,9 @@
             "id": 982,
             "href": "https://www.formula1.com/en/racing/2018/Azerbaijan.html",
             "location": "azerbaijan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "baku",
                 "bakku",
@@ -70,6 +82,9 @@
             "id": 983,
             "href": "https://www.formula1.com/en/racing/2018/Spain.html",
             "location": "spain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "catalunya",
                 "spanish",
@@ -86,6 +101,9 @@
             "id": 984,
             "href": "https://www.formula1.com/en/racing/2018/Monaco.html",
             "location": "monaco",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monaco",
                 "monte-carlo"
@@ -101,6 +119,9 @@
             "id": 985,
             "href": "https://www.formula1.com/en/racing/2018/Canada.html",
             "location": "canada",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "canada"
             ],
@@ -115,6 +136,9 @@
             "id": 986,
             "href": "https://www.formula1.com/en/racing/2018/France.html",
             "location": "france",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "france"
             ],
@@ -129,6 +153,9 @@
             "id": 987,
             "href": "https://www.formula1.com/en/racing/2018/Austria.html",
             "location": "austria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "red-bull-ring",
                 "austrian",
@@ -145,6 +172,9 @@
             "id": 988,
             "href": "https://www.formula1.com/en/racing/2018/Great_Britain.html",
             "location": "great-britain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "great-britain"
             ],
@@ -159,6 +189,9 @@
             "id": 989,
             "href": "https://www.formula1.com/en/racing/2018/Germany.html",
             "location": "germany",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "nurburgring",
                 "eifel",
@@ -175,6 +208,9 @@
             "id": 990,
             "href": "https://www.formula1.com/en/racing/2018/Hungary.html",
             "location": "hungary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "hungaroring",
                 "hungarian",
@@ -191,6 +227,9 @@
             "id": 991,
             "href": "https://www.formula1.com/en/racing/2018/Belgium.html",
             "location": "belgium",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "spa",
                 "spa-francorchamps",
@@ -208,6 +247,9 @@
             "id": 992,
             "href": "https://www.formula1.com/en/racing/2018/Italy.html",
             "location": "italy",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monza",
                 "italian",
@@ -224,6 +266,9 @@
             "id": 993,
             "href": "https://www.formula1.com/en/racing/2018/Singapore.html",
             "location": "singapore",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "marina-bay",
                 "singapore"
@@ -239,6 +284,9 @@
             "id": 994,
             "href": "https://www.formula1.com/en/racing/2018/Russia.html",
             "location": "russia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sochi",
                 "russian",
@@ -255,6 +303,9 @@
             "id": 995,
             "href": "https://www.formula1.com/en/racing/2018/Japan.html",
             "location": "japan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "suzuka",
                 "japanese",
@@ -271,6 +322,9 @@
             "id": 996,
             "href": "https://www.formula1.com/en/racing/2018/United_States.html",
             "location": "united-states",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "cota",
                 "austin",
@@ -288,6 +342,9 @@
             "id": 997,
             "href": "https://www.formula1.com/en/racing/2018/Mexico.html",
             "location": "mexico",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "mexico-city",
                 "mexican",
@@ -304,6 +361,9 @@
             "id": 998,
             "href": "https://www.formula1.com/en/racing/2018/Brazil.html",
             "location": "brazil",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "interlagos",
                 "brazilian",
@@ -320,6 +380,9 @@
             "id": 999,
             "href": "https://www.formula1.com/en/racing/2018/United_Arab_Emirates.html",
             "location": "abu-dhabi",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "yas-marina",
                 "abu-dhabi",

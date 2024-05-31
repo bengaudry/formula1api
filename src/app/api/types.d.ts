@@ -79,6 +79,7 @@ type SeasonStructure = {
   gp_total: number;
   grands_prix: Array<{
     location: string;
+    images: Array<string>;
     keywords: Array<string>;
     id: number;
     sprint: boolean;

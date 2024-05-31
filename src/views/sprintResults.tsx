@@ -1,4 +1,5 @@
 "use client";
+import { TextInput } from "@/components/form/input";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -65,13 +66,11 @@ export function SprintResults() {
   return (
     <div className="py-6">
       <div className="w-full flex justify-center items-center my-4 gap-2 px-6">
-        <input
-          type="text"
+        <TextInput
           placeholder="Location (try china, miami...)"
           value={selectedLocation}
           onChange={({ target }) => setSelectedLocation(target.value)}
           onBlur={getRaceData}
-          className="bg-black border border-neutral-600 rounded-md px-4 py-2 w-full max-w-96"
         />
         <select className="bg-neutral-800 rounded-md py-2 px-6">
           <option selected>2024</option>

@@ -4,8 +4,11 @@
     "grands_prix": [
         {
             "id": 959,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "australia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "albert-park",
                 "australian",
@@ -21,8 +24,11 @@
         },
         {
             "id": 960,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "china",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "shanghai",
                 "chinese",
@@ -37,8 +43,11 @@
         },
         {
             "id": 961,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "bahrain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir",
                 "bahrain"
@@ -52,8 +61,11 @@
         },
         {
             "id": 962,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "russia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sochi",
                 "russian",
@@ -68,8 +80,11 @@
         },
         {
             "id": 963,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "spain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "catalunya",
                 "spanish",
@@ -84,8 +99,11 @@
         },
         {
             "id": 964,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "monaco",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monaco",
                 "monte-carlo"
@@ -99,8 +117,11 @@
         },
         {
             "id": 965,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "canada",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "canada"
             ],
@@ -113,8 +134,11 @@
         },
         {
             "id": 966,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "azerbaijan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "baku",
                 "bakku",
@@ -129,8 +153,11 @@
         },
         {
             "id": 967,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "austria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "red-bull-ring",
                 "austrian",
@@ -145,8 +172,11 @@
         },
         {
             "id": 968,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "united-kingdom",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "silverstone",
                 "british",
@@ -163,8 +193,11 @@
         },
         {
             "id": 969,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "hungary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "hungaroring",
                 "hungarian",
@@ -179,8 +212,11 @@
         },
         {
             "id": 970,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "belgium",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "spa",
                 "spa-francorchamps",
@@ -196,8 +232,11 @@
         },
         {
             "id": 971,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "italy",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monza",
                 "italian",
@@ -212,8 +251,11 @@
         },
         {
             "id": 972,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "singapore",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "marina-bay",
                 "singapore"
@@ -227,8 +269,11 @@
         },
         {
             "id": 973,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "malaysia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "malaysia"
             ],
@@ -241,8 +286,11 @@
         },
         {
             "id": 974,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "japan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "suzuka",
                 "japanese",
@@ -257,8 +305,11 @@
         },
         {
             "id": 975,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "united-states",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "cota",
                 "austin",
@@ -274,8 +325,11 @@
         },
         {
             "id": 976,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "mexico",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "mexico-city",
                 "mexican",
@@ -290,8 +344,11 @@
         },
         {
             "id": 977,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "brazil",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "interlagos",
                 "brazilian",
@@ -306,8 +363,11 @@
         },
         {
             "id": 978,
-            "href": "https://www.formula1.comNone",
+            "href": null,
             "location": "abu-dhabi",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "yas-marina",
                 "abu-dhabi",

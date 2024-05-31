@@ -6,6 +6,9 @@
             "id": 1141,
             "href": "https://www.formula1.com/en/racing/2023/Bahrain.html",
             "location": "bahrain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir",
                 "bahrain"
@@ -21,6 +24,9 @@
             "id": 1142,
             "href": "https://www.formula1.com/en/racing/2023/Saudi_Arabia.html",
             "location": "saudi-arabia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "jeddah",
                 "djedda",
@@ -39,6 +45,9 @@
             "id": 1143,
             "href": "https://www.formula1.com/en/racing/2023/Australia.html",
             "location": "australia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "albert-park",
                 "australian",
@@ -56,6 +65,9 @@
             "id": 1207,
             "href": "https://www.formula1.com/en/racing/2023/Azerbaijan.html",
             "location": "azerbaijan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "baku",
                 "bakku",
@@ -72,6 +84,9 @@
             "id": 1208,
             "href": "https://www.formula1.com/en/racing/2023/Miami.html",
             "location": "miami",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "miami"
             ],
@@ -86,6 +101,7 @@
             "id": 1209,
             "href": "https://www.formula1.com/en/racing/2023/EmiliaRomagna.html",
             "location": "emilia-romagna",
+            "images": [],
             "keywords": [
                 "imola",
                 "emilia-romagna"
@@ -101,6 +117,9 @@
             "id": 1210,
             "href": "https://www.formula1.com/en/racing/2023/Monaco.html",
             "location": "monaco",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monaco",
                 "monte-carlo"
@@ -116,6 +135,9 @@
             "id": 1211,
             "href": "https://www.formula1.com/en/racing/2023/Spain.html",
             "location": "spain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "catalunya",
                 "spanish",
@@ -132,6 +154,9 @@
             "id": 1212,
             "href": "https://www.formula1.com/en/racing/2023/Canada.html",
             "location": "canada",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "canada"
             ],
@@ -146,6 +171,9 @@
             "id": 1213,
             "href": "https://www.formula1.com/en/racing/2023/Austria.html",
             "location": "austria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "red-bull-ring",
                 "austrian",
@@ -162,6 +190,9 @@
             "id": 1214,
             "href": "https://www.formula1.com/en/racing/2023/Great_Britain.html",
             "location": "great-britain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "great-britain"
             ],
@@ -176,6 +207,9 @@
             "id": 1215,
             "href": "https://www.formula1.com/en/racing/2023/Hungary.html",
             "location": "hungary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "hungaroring",
                 "hungarian",
@@ -192,6 +226,9 @@
             "id": 1216,
             "href": "https://www.formula1.com/en/racing/2023/Belgium.html",
             "location": "belgium",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "spa",
                 "spa-francorchamps",
@@ -209,6 +246,9 @@
             "id": 1217,
             "href": "https://www.formula1.com/en/racing/2023/Netherlands.html",
             "location": "netherlands",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "zandvoort",
                 "dutch",
@@ -225,6 +265,9 @@
             "id": 1218,
             "href": "https://www.formula1.com/en/racing/2023/Italy.html",
             "location": "italy",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monza",
                 "italian",
@@ -241,6 +284,9 @@
             "id": 1219,
             "href": "https://www.formula1.com/en/racing/2023/Singapore.html",
             "location": "singapore",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "marina-bay",
                 "singapore"
@@ -256,6 +302,9 @@
             "id": 1220,
             "href": "https://www.formula1.com/en/racing/2023/Japan.html",
             "location": "japan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "suzuka",
                 "japanese",
@@ -272,6 +321,9 @@
             "id": 1221,
             "href": "https://www.formula1.com/en/racing/2023/Qatar.html",
             "location": "qatar",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "losail",
                 "qatar"
@@ -287,6 +339,9 @@
             "id": 1222,
             "href": "https://www.formula1.com/en/racing/2023/United_States.html",
             "location": "united-states",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "cota",
                 "austin",
@@ -304,6 +359,9 @@
             "id": 1223,
             "href": "https://www.formula1.com/en/racing/2023/Mexico.html",
             "location": "mexico",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "mexico-city",
                 "mexican",
@@ -320,6 +378,9 @@
             "id": 1224,
             "href": "https://www.formula1.com/en/racing/2023/Brazil.html",
             "location": "brazil",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "interlagos",
                 "brazilian",
@@ -336,6 +397,9 @@
             "id": 1225,
             "href": "https://www.formula1.com/en/racing/2023/Las_Vegas.html",
             "location": "las-vegas",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "las-vegas"
             ],
@@ -350,6 +414,9 @@
             "id": 1226,
             "href": "https://www.formula1.com/en/racing/2023/United_Arab_Emirates.html",
             "location": "abu-dhabi",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "yas-marina",
                 "abu-dhabi",

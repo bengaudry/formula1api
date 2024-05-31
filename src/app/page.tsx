@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default () => (
   <div>
     <header className="fixed w-full inset-0 bottom-auto border-b border-b-neutral-800">
@@ -15,7 +17,9 @@ export default () => (
       <h3 className="text-2xl font-semibold mb-2">Api playground</h3>
       <ul>
         <li>
-          <a href="/playground/race-results">Race results -&gt;</a>
+          <Link href="/playground/race-results">Race results -&gt;</Link>
+          <Link href="/playground/sprint-results">Sprint results -&gt;</Link>
+          <Link href="/playground/search">Search -&gt;</Link>
         </li>
       </ul>
     </main>

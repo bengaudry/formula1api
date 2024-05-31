@@ -24,8 +24,9 @@ export async function GET(
     return NextResponse.json(data, { status: 200 });
   } catch (err) {
     return NextResponse.json(
-      { error: "Failed to fetch data" },
+      { error: "Failed to fetch data", details: err },
       { status: 200 }
     );
   }
 }
+

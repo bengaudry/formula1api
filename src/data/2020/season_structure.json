@@ -6,6 +6,9 @@
             "id": 1045,
             "href": "https://www.formula1.com/en/racing/2020/Austria.html",
             "location": "austria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "red-bull-ring",
                 "austrian",
@@ -22,6 +25,9 @@
             "id": 1046,
             "href": "https://www.formula1.com/en/racing/2020/Styria.html",
             "location": "styria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "styrian",
                 "styria",
@@ -38,6 +44,9 @@
             "id": 1047,
             "href": "https://www.formula1.com/en/racing/2020/Hungary.html",
             "location": "hungary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "hungaroring",
                 "hungarian",
@@ -54,6 +63,9 @@
             "id": 1048,
             "href": "https://www.formula1.com/en/racing/2020/Great_Britain.html",
             "location": "great-britain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "great-britain"
             ],
@@ -68,6 +80,9 @@
             "id": 1049,
             "href": "https://www.formula1.com/en/racing/2020/70th_Anniversary.html",
             "location": "70th-anniversary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "70th-anniversary"
             ],
@@ -82,6 +97,9 @@
             "id": 1050,
             "href": "https://www.formula1.com/en/racing/2020/Spain.html",
             "location": "spain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "catalunya",
                 "spanish",
@@ -98,6 +116,9 @@
             "id": 1051,
             "href": "https://www.formula1.com/en/racing/2020/Belgium.html",
             "location": "belgium",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "spa",
                 "spa-francorchamps",
@@ -115,6 +136,9 @@
             "id": 1052,
             "href": "https://www.formula1.com/en/racing/2020/Italy.html",
             "location": "italy",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monza",
                 "italian",
@@ -131,6 +155,9 @@
             "id": 1053,
             "href": "https://www.formula1.com/en/racing/2020/Tuscany.html",
             "location": "tuscany",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "mugello",
                 "tuscan",
@@ -147,6 +174,9 @@
             "id": 1054,
             "href": "https://www.formula1.com/en/racing/2020/Russia.html",
             "location": "russia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sochi",
                 "russian",
@@ -163,6 +193,9 @@
             "id": 1055,
             "href": "https://www.formula1.com/en/racing/2020/Germany.html",
             "location": "germany",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "nurburgring",
                 "eifel",
@@ -179,6 +212,9 @@
             "id": 1056,
             "href": "https://www.formula1.com/en/racing/2020/Portugal.html",
             "location": "portugal",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "portugal"
             ],
@@ -193,6 +229,9 @@
             "id": 1057,
             "href": "https://www.formula1.com/en/racing/2020/EmiliaRomagna.html",
             "location": "emilia-romagna",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "imola",
                 "emilia-romagna"
@@ -208,6 +247,9 @@
             "id": 1058,
             "href": "https://www.formula1.com/en/racing/2020/Turkey.html",
             "location": "turkey",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "turkey"
             ],
@@ -222,6 +264,9 @@
             "id": 1059,
             "href": "https://www.formula1.com/en/racing/2020/Bahrain.html",
             "location": "bahrain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir",
                 "bahrain"
@@ -237,6 +282,9 @@
             "id": 1060,
             "href": "https://www.formula1.com/en/racing/2020/Sakhir.html",
             "location": "sakhir",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir"
             ],
@@ -251,6 +299,9 @@
             "id": 1061,
             "href": "https://www.formula1.com/en/racing/2020/United_Arab_Emirates.html",
             "location": "abu-dhabi",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "yas-marina",
                 "abu-dhabi",

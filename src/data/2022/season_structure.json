@@ -6,6 +6,9 @@
             "id": 1124,
             "href": "https://www.formula1.com/en/racing/2022/Bahrain.html",
             "location": "bahrain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "sakhir",
                 "bahrain"
@@ -21,6 +24,9 @@
             "id": 1125,
             "href": "https://www.formula1.com/en/racing/2022/Saudi_Arabia.html",
             "location": "saudi-arabia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "jeddah",
                 "djedda",
@@ -39,6 +45,9 @@
             "id": 1108,
             "href": "https://www.formula1.com/en/racing/2022/Australia.html",
             "location": "australia",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "albert-park",
                 "australian",
@@ -56,6 +65,9 @@
             "id": 1109,
             "href": "https://www.formula1.com/en/racing/2022/EmiliaRomagna.html",
             "location": "emilia-romagna",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "imola",
                 "emilia-romagna"
@@ -71,6 +83,9 @@
             "id": 1110,
             "href": "https://www.formula1.com/en/racing/2022/Miami.html",
             "location": "miami",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "miami"
             ],
@@ -85,6 +100,9 @@
             "id": 1111,
             "href": "https://www.formula1.com/en/racing/2022/Spain.html",
             "location": "spain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "catalunya",
                 "spanish",
@@ -101,6 +119,9 @@
             "id": 1112,
             "href": "https://www.formula1.com/en/racing/2022/Monaco.html",
             "location": "monaco",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monaco",
                 "monte-carlo"
@@ -116,6 +137,9 @@
             "id": 1126,
             "href": "https://www.formula1.com/en/racing/2022/Azerbaijan.html",
             "location": "azerbaijan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "baku",
                 "bakku",
@@ -132,6 +156,9 @@
             "id": 1113,
             "href": "https://www.formula1.com/en/racing/2022/Canada.html",
             "location": "canada",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "canada"
             ],
@@ -146,6 +173,9 @@
             "id": 1114,
             "href": "https://www.formula1.com/en/racing/2022/Great_Britain.html",
             "location": "great-britain",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "great-britain"
             ],
@@ -160,6 +190,9 @@
             "id": 1115,
             "href": "https://www.formula1.com/en/racing/2022/Austria.html",
             "location": "austria",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "red-bull-ring",
                 "austrian",
@@ -176,6 +209,9 @@
             "id": 1116,
             "href": "https://www.formula1.com/en/racing/2022/France.html",
             "location": "france",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "france"
             ],
@@ -190,6 +226,9 @@
             "id": 1117,
             "href": "https://www.formula1.com/en/racing/2022/Hungary.html",
             "location": "hungary",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "hungaroring",
                 "hungarian",
@@ -206,6 +245,9 @@
             "id": 1118,
             "href": "https://www.formula1.com/en/racing/2022/Belgium.html",
             "location": "belgium",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "spa",
                 "spa-francorchamps",
@@ -223,6 +265,9 @@
             "id": 1119,
             "href": "https://www.formula1.com/en/racing/2022/Netherlands.html",
             "location": "netherlands",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "zandvoort",
                 "dutch",
@@ -239,6 +284,9 @@
             "id": 1120,
             "href": "https://www.formula1.com/en/racing/2022/Italy.html",
             "location": "italy",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "monza",
                 "italian",
@@ -255,6 +303,9 @@
             "id": 1133,
             "href": "https://www.formula1.com/en/racing/2022/Singapore.html",
             "location": "singapore",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "marina-bay",
                 "singapore"
@@ -270,6 +321,9 @@
             "id": 1134,
             "href": "https://www.formula1.com/en/racing/2022/Japan.html",
             "location": "japan",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "suzuka",
                 "japanese",
@@ -286,6 +340,9 @@
             "id": 1135,
             "href": "https://www.formula1.com/en/racing/2022/United_States.html",
             "location": "united-states",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "cota",
                 "austin",
@@ -303,6 +360,9 @@
             "id": 1136,
             "href": "https://www.formula1.com/en/racing/2022/Mexico.html",
             "location": "mexico",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "mexico-city",
                 "mexican",
@@ -319,6 +379,9 @@
             "id": 1137,
             "href": "https://www.formula1.com/en/racing/2022/Brazil.html",
             "location": "brazil",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "interlagos",
                 "brazilian",
@@ -335,6 +398,9 @@
             "id": 1138,
             "href": "https://www.formula1.com/en/racing/2022/United_Arab_Emirates.html",
             "location": "abu-dhabi",
+            "images": [
+                "https://www.formula1.com/etc/designs/fom-website/images/flag-asset.png"
+            ],
             "keywords": [
                 "yas-marina",
                 "abu-dhabi",
