@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <main>
-      <header className="border-b border-neutral-700">
+      <header className="border-b border-zinc-700">
         <div className="py-6 px-4">
           <Link href="/" className="text-xl font-bold text-white">
             Formula 1 api

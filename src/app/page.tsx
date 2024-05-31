@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default () => (
   <div>
-    <header className="fixed w-full inset-0 bottom-auto border-b border-b-neutral-800">
+    <header className="fixed w-full inset-0 bottom-auto border-b border-b-zinc-800">
       <div className="max-w-screen-lg mx-center py-3 px-6 h-20 flex items-center">
         <div className="flex items-center gap-2">
           <span className="block w-10 aspect-square bg-red-500 shadow-inner shadow-black/50 rounded-md" />

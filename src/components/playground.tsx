@@ -6,7 +6,7 @@ export function RaceResultsDisplayer({ data }: { data: RaceResults }) {
           <li
             key={idx}
             className={`grid grid-cols-12 gap-2 ${
-              idx % 2 === 0 ? "bg-neutral-800" : ""
+              idx % 2 === 0 ? "bg-zinc-800" : ""
             } px-4 py-1 rounded-md`}
           >
             <span className="col-span-1 md:col-span-1">{position ?? "-"}</span>

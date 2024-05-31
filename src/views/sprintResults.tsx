@@ -1,5 +1,6 @@
 "use client";
-import { TextInput } from "@/components/form/input";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -66,15 +67,22 @@ export function SprintResults() {
   return (
     <div className="py-6">
       <div className="w-full flex justify-center items-center my-4 gap-2 px-6">
-        <TextInput
+        <Input
           placeholder="Location (try china, miami...)"
           value={selectedLocation}
           onChange={({ target }) => setSelectedLocation(target.value)}
           onBlur={getRaceData}
         />
-        <select className="bg-neutral-800 rounded-md py-2 px-6">
-          <option selected>2024</option>
-        </select>
+        <Select onValueChange={(val) => setSelectedYear(parseInt(val))}>
+          <SelectTrigger>
+            <SelectValue placeholder="Select a year" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="2024" defaultChecked>
+              2024
+            </SelectItem>
+          </SelectContent>
+        </Select>
       </div>
       {!data || "isOver" in data ? (
         <p className="text-center">
@@ -104,7 +112,7 @@ export function SprintResults() {
             <h1 className="text-2xl font-bold max-w-screen-md mx-auto overflow-visible">
               {data?.session_name}
             </h1>
-            <p className="text-neutral-400">{data?.circuit}</p>
+            <p className="text-zinc-400">{data?.circuit}</p>
           </header>
 
           <ul className="max-w-screen-md mx-auto px-2">
@@ -116,7 +124,7 @@ export function SprintResults() {
                 <li
                   key={idx}
                   className={`grid grid-cols-12 gap-2 ${
-                    idx % 2 === 0 ? "bg-neutral-800" : ""
+                    idx % 2 === 0 ? "bg-zinc-800" : ""
                   } px-4 py-1 rounded-md`}
                 >
                   <span className="col-span-1 md:col-span-1">

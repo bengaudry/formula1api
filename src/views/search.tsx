@@ -1,8 +1,9 @@
 "use client";
-import { TextInput } from "@/components/form/input";
 import Link from "next/link";
 import { useState } from "react";
 import { useFetch } from "@/hooks/useFetch";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export function Search() {
   const [query, setQuery] = useState("");
@@ -28,55 +29,42 @@ export function Search() {
           fetchData(`/api/find-grand-prix?year=2024&query=${query}`);
         }}
       >
-        <TextInput
+        <Input
           placeholder="Location (try china, miami, imola...)"
           value={query}
           onChange={({ target }) => setQuery(target.value)}
         />
-        <button
-          className="bg-neutral-700 hover:bg-neutral-600 active:bg-neutral-800 py-2 px-4 rounded-md"
+        <Button
           type="submit"
         >
-          Search
-        </button>
+          {isLoading ? "..." : "Search"}
+        </Button>
       </form>
 
-      {isLoading && (
-        <span className="block text-center text-neutral-400 mx-auto">
-          Loading...
-        </span>
-      )}
-
-      {data ? (
+      {data && (
         <div className="px-4">
-          <span className="text-neutral-400 text-sm">
+          <span className="text-zinc-400 text-sm">
             Found in {requestDuration / 1000} s
           </span>
           <Link
             href={data.href}
             target="_blank"
-            className="block bg-neutral-800 rounded-xl px-6 py-3"
+            className="block bg-zinc-800 rounded-xl px-6 py-3"
           >
             <span className="text-lg font-semibold">{data.gp_name}</span>
             <br />
-            <span className="capitalize text-neutral-400">
+            <span className="capitalize text-zinc-400">
               {data.start_date}-{data.end_date} {data.month}
             </span>
             <br />
-            <span className="capitalize text-neutral-400">{data.location}</span>
+            <span className="capitalize text-zinc-400">{data.location}</span>
             {data.sprint && (
-              <span className="block bg-neutral-700 w-fit px-4 py-1 rounded-full mt-2">
+              <span className="block bg-zinc-700 w-fit px-4 py-1 rounded-full mt-2">
                 Sprint
               </span>
             )}
           </Link>
         </div>
-      ) : (
-        !isLoading && (
-          <span className="text-center text-neutral-400 block mx-auto">
-            No data found
-          </span>
-        )
       )}
     </div>
   );

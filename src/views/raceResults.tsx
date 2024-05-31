@@ -1,5 +1,13 @@
 "use client";
 import { RaceResultsDisplayer } from "@/components/playground";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select";
 import {
   fetchRaceResults,
   fetchSeasonStructure,
@@ -80,17 +88,23 @@ export function RaceResults() {
   return (
     <div className="py-6">
       <div className="w-full flex justify-center items-center my-4 gap-2 px-6">
-        <input
+        <Input
           type="text"
           placeholder="Location (try monaco, imola...)"
           value={selectedLocation}
           onChange={({ target }) => setSelectedLocation(target.value)}
           onBlur={getRaceData}
-          className="bg-black border border-neutral-600 rounded-md px-4 py-2 w-full max-w-96"
         />
-        <select className="bg-neutral-800 rounded-md py-2 px-6">
-          <option selected>2024</option>
-        </select>
+        <Select onValueChange={(val) => setSelectedYear(parseInt(val))}>
+          <SelectTrigger>
+            <SelectValue placeholder="Select a year" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="2024" defaultChecked>
+              2024
+            </SelectItem>
+          </SelectContent>
+        </Select>
       </div>
       {!data || "isOver" in data ? (
         <p className="text-center">
@@ -109,7 +123,7 @@ export function RaceResults() {
             <h1 className="text-2xl font-bold max-w-screen-md mx-auto overflow-visible">
               {data?.session_name}
             </h1>
-            <p className="text-neutral-400">{data?.circuit}</p>
+            <p className="text-zinc-400">{data?.circuit}</p>
             <SprintLink
               weekendDetails={wekeendDetails}
               location={wekeendDetails?.location}

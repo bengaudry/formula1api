@@ -2,6 +2,15 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Container, Section, Bar } from "@column-resizer/react";
 import { useSearchParams } from "next/navigation";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 function ResizableColumnsContainer({
   location,
@@ -54,30 +63,40 @@ function ResizableColumnsContainer({
 
   return (
     <>
-      <span>Show teams</span>
-      <input
-        type="checkbox"
-        onChange={({ target }) => setShowTeams(target.checked)}
-        checked={showTeams}
-      />
-      <input
-        type="text"
-        className="bg-neutral-800"
-        value={locationQuery}
-        onChange={({ target }) => setLocationQuery(target.value)}
-      />
-      <input
-        type="text"
-        className="bg-neutral-800"
-        value={yearQuery}
-        onChange={({ target }) => setYearQuery(target.value)}
-      />
+      <div className="flex flex-col gap-2 mb-4">
+        <label className="flex flex-row items-center text-zinc-400 gap-2">
+          <span>Show teams</span>
+          <Checkbox
+            onCheckedChange={(c) => setShowTeams(c as boolean)}
+            checked={showTeams}
+          />
+        </label>
+        <div className="flex items-center gap-2">
+          <Input
+            type="text"
+            value={locationQuery}
+            onChange={({ target }) => setLocationQuery(target.value)}
+          />
+          <Select onValueChange={setYearQuery}>
+            <SelectTrigger>
+              <SelectValue placeholder="Select a year" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="2024" defaultChecked>
+                2024
+              </SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
+
+
       <div className="overflow-x-auto">
         <div className="min-w-[800px] overflow-x-auto">
-          <Container style={{ background: "#80808080" }} className="w-full">
+          <Container className="w-full border border-zinc-700 rounded-lg overflow-hidden">
             <Section minSize={50}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
-                <li className="px-2 py-1 bg-red-800">Practice 1</li>
+                <li className="px-2 py-1 bg-zinc-700">Practice 1</li>
                 {fp1Data?.results?.map(
                   ({ car, driver, position, teamColor, time }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
@@ -96,11 +115,12 @@ function ResizableColumnsContainer({
             </Section>
             <Bar
               size={5}
-              style={{ background: "currentColor", cursor: "e-resize" }}
+              className="bg-zinc-500 hover:bg-zinc-300 hover:scale-x-150 transition-all duration-150"
+              style={{ cursor: "e-resize" }}
             />
             <Section minSize={100}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
-                <li className="px-2 py-1 bg-red-800">Practice 2</li>
+                <li className="px-2 py-1 bg-zinc-700">Practice 2</li>
                 {fp2Data?.results?.map(
                   ({ car, driver, position, teamColor, time }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
@@ -119,11 +139,12 @@ function ResizableColumnsContainer({
             </Section>
             <Bar
               size={5}
-              style={{ background: "currentColor", cursor: "e-resize" }}
+              className="bg-zinc-500 hover:bg-zinc-300 hover:scale-x-150 transition-all duration-150"
+              style={{ cursor: "e-resize" }}
             />
             <Section minSize={100}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
-                <li className="px-2 py-1 bg-red-800">Practice 3</li>
+                <li className="px-2 py-1 bg-zinc-700">Practice 3</li>
                 {fp3Data?.results?.map(
                   ({ car, driver, position, teamColor, time }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
@@ -142,11 +163,12 @@ function ResizableColumnsContainer({
             </Section>
             <Bar
               size={5}
-              style={{ background: "currentColor", cursor: "e-resize" }}
+              className="bg-zinc-500 hover:bg-zinc-300 hover:scale-x-150 transition-all duration-150"
+              style={{ cursor: "e-resize" }}
             />
             <Section minSize={100}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
-                <li className="px-2 py-1 bg-red-800">Qualifying</li>
+                <li className="px-2 py-1 bg-zinc-700">Qualifying</li>
                 {qualifyingData?.results?.map(
                   ({ car, driver, position, teamColor, times }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
@@ -178,7 +200,7 @@ export function WeekendTimes() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Resizable Columns Example</h1>
+      <h1 className="text-2xl font-bold mb-4">Comparative times table</h1>
       <ResizableColumnsContainer
         location={location ?? undefined}
         year={year ?? undefined}
