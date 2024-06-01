@@ -1,13 +1,8 @@
 "use client";
 import { RaceResultsDisplayer } from "@/components/playground";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectValue,
-  SelectTrigger,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
+import { YearSelector } from "@/components/YearSelector";
+import { useFetch } from "@/hooks/useFetch";
 import {
   fetchRaceResults,
   fetchSeasonStructure,
@@ -43,17 +38,15 @@ export function RaceResults() {
   const params = useSearchParams();
   const query = params.get("query") ?? null;
 
-  const [data, setData] = useState<
-    RaceResults | null | { isOver: false; name: string }
-  >(null);
-  const [selectedLocation, setSelectedLocation] = useState(query ?? "monaco");
-  const [selectedYear, setSelectedYear] = useState(2024);
-  const [wekeendDetails, setWeekendDetails] = useState<any>(null);
+  const [selectedLocation, setSelectedLocation] = useState<string>(query ?? "");
+  const [selectedYear, setSelectedYear] = useState("2024");
+  const [weekendDetails, setWeekendDetails] = useState<any>(null);
+  const { data, fetchData, isLoading, error } = useFetch<RaceResults>();
 
   async function getRaceData() {
     try {
       const seasonStructure: SeasonStructure = await fetchSeasonStructure(
-        selectedYear
+        parseInt(selectedYear)
       );
 
       const fLocation = selectedLocation.toLowerCase().replaceAll(" ", "-");
@@ -64,20 +57,13 @@ export function RaceResults() {
 
       if (!weekend) throw new Error("Location not found");
       setWeekendDetails(weekend);
-      if (weekend.isOver) {
-        const raceResults = await fetchRaceResults(
-          selectedYear,
-          weekend.location
-        );
-        if ("error" in raceResults) throw new Error(raceResults.error);
-        setData(raceResults);
-      } else
-        setData({
-          isOver: weekend.isOver,
-          name: weekend.location.replaceAll("-", " "),
-        });
+      fetchData(
+        `/api/weekend-data/${
+          weekend.sprint ? "sprint" : "race"
+        }-results?year=${selectedYear}&location=${weekend.location}`
+      );
     } catch (error) {
-      setData(null);
+      console.error(error);
     }
   }
 
@@ -96,29 +82,23 @@ export function RaceResults() {
           onChange={({ target }) => setSelectedLocation(target.value)}
           onBlur={getRaceData}
         />
-        <Select
-          onValueChange={(val) => setSelectedYear(parseInt(val))}
-          defaultValue={selectedYear.toString()}
-        >
-          <SelectTrigger>
-            <SelectValue placeholder="Select a year" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="2024" defaultChecked>
-              2024
-            </SelectItem>
-          </SelectContent>
-        </Select>
+        <YearSelector year={selectedYear} onChangeYear={setSelectedYear} />
       </div>
-      {!data || "isOver" in data ? (
-        <p className="text-center">
-          {!data ? (
-            "This session does not exist in our database"
+      {JSON.stringify(error)}
+      {!data || error ? (
+        <p className="text-center text-zinc-400">
+          {weekendDetails && !weekendDetails.isOver ? (
+            <p>
+              {weekendDetails.gp_name ?? "This session"} has not happened yet.
+              <span className="block mt-1">
+                Date : {weekendDetails.start_date}-{weekendDetails.end_date}/
+                {weekendDetails.month}
+              </span>
+            </p>
           ) : (
-            <>
-              The results for <span className="capitalize">{data?.name}</span>{" "}
-              are not available yet
-            </>
+            query &&
+            query.length > 0 &&
+            "This session does not exist in our database"
           )}
         </p>
       ) : (
@@ -129,8 +109,8 @@ export function RaceResults() {
             </h1>
             <p className="text-zinc-400">{data?.circuit}</p>
             <SprintLink
-              weekendDetails={wekeendDetails}
-              location={wekeendDetails?.location}
+              weekendDetails={weekendDetails}
+              location={weekendDetails?.location}
             />
           </header>
           {data && !("isOver" in data) && <RaceResultsDisplayer data={data} />}

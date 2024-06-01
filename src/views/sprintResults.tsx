@@ -1,6 +1,6 @@
 "use client";
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { YearSelector } from "@/components/YearSelector";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -13,15 +13,17 @@ export function SprintResults() {
     RaceResults | null | { isOver: false; name: string }
   >(null);
   const [selectedLocation, setSelectedLocation] = useState(query ?? "china");
-  const [selectedYear, setSelectedYear] = useState(2024);
+  const [selectedYear, setSelectedYear] = useState<string>();
 
-  async function fetchSeasonStructure(year: number) {
+  async function fetchSeasonStructure(year?: string) {
+    if (!year) throw new Error("Please provide a valid year");
     const response = await fetch(`/api/season-structure?year=${year}`);
     if (!response.ok) throw new Error("Failed to fetch season structure");
     return response.json();
   }
 
-  async function fetchRaceResults(year: number, location: string) {
+  async function fetchRaceResults(location: string, year?: string) {
+    if (!year) throw new Error("Please provide a valid year");
     const response = await fetch(
       `/api/weekend-data/sprint-results?year=${year}&location=${location}`
     );
@@ -45,8 +47,8 @@ export function SprintResults() {
 
       if (weekend.isOver) {
         const raceResults = await fetchRaceResults(
-          selectedYear,
-          weekend.location
+          weekend.location,
+          selectedYear
         );
         if ("error" in raceResults) throw new Error(raceResults.error);
         setData(raceResults);
@@ -73,16 +75,7 @@ export function SprintResults() {
           onChange={({ target }) => setSelectedLocation(target.value)}
           onBlur={getRaceData}
         />
-        <Select onValueChange={(val) => setSelectedYear(parseInt(val))}>
-          <SelectTrigger>
-            <SelectValue placeholder="Select a year" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="2024" defaultChecked>
-              2024
-            </SelectItem>
-          </SelectContent>
-        </Select>
+        <YearSelector year={selectedYear} onChangeYear={setSelectedYear} />
       </div>
       {!data || "isOver" in data ? (
         <p className="text-center">

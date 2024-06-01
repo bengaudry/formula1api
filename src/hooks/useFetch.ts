@@ -23,9 +23,11 @@ export function useFetch<T extends any>(): UseFetchReturnType<T> {
         return response.json();
       })
       .then((json) => {
+        if ("error" in json) throw Error("Error while fetching data")
         setData(json as T);
       })
       .catch((err) => {
+        console.error("error", error);
         setError(err);
         setData(null);
       })

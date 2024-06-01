@@ -1,7 +1,7 @@
 export function RaceResultsDisplayer({ data }: { data: RaceResults }) {
   return (
     <ul className="max-w-screen-md mx-auto px-2">
-      {data.results.map(
+      {data?.results?.map(
         ({ position, car, teamColor, driver, laps, points, time }, idx) => (
           <li
             key={idx}

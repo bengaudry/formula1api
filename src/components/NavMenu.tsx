@@ -1,7 +1,6 @@
 "use client";
-
-import * as React from "react";
-import Link from "next/link";
+import React, { useState } from "react";
+import NextLink from "next/link";
 
 import { cn } from "@/lib/utils";
 import {
@@ -13,6 +12,23 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
+  SheetClose,
+} from "./ui/sheet";
+import { Button, Link } from "./ui/button";
+import { Icon } from "./ui/icon";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./ui/accordion";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -37,58 +53,111 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Playground</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+    <div className="flex flex-row items-center">
+      <Sheet>
+        <SheetTrigger asChild className="md:hidden">
+          <Button variant="secondary" className="aspect-square">
+            <Icon
+              name="menu-burger"
+              className={`absolute block transition-all duration-150 ease-out opacity-1 scale-100 delay-75`}
+            />
+          </Button>
+        </SheetTrigger>
+        <SheetContent className="md:hidden">
+          <SheetHeader className="text-left">
+            <SheetTitle>Menu</SheetTitle>
+            <SheetDescription>
+              Make changes to your profile here. Click save when you're done.
+            </SheetDescription>
+          </SheetHeader>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Playground</AccordionTrigger>
+              <AccordionContent>
+                {components.map(({ title, href, description }) => (
+                  <SheetClose asChild>
+                    <NavItem href={href} title={title}>
+                      {description}
+                    </NavItem>
+                  </SheetClose>
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+          <SheetClose asChild className="w-full">
+            <Link href="/docs" variant="secondary" className="w-full mt-4">
               Documentation
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+            </Link>
+          </SheetClose>
+        </SheetContent>
+      </Sheet>
+
+      <NavigationMenu className="hidden md:block">
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Playground</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                {components.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.href}
+                  >
+                    {component.description}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NextLink href="/docs" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Documentation
+              </NavigationMenuLink>
+            </NextLink>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 }
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+>((props, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-zinc-800 hover:text-zinc-100 focus:bg-zinc-800 focus:text-zinc-100",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-zinc-400">
-            {children}
-          </p>
-        </a>
+        <NavItem {...props} ref={ref} />
       </NavigationMenuLink>
     </li>
   );
 });
 ListItem.displayName = "ListItem";
+
+const NavItem = ({
+  ref,
+  title,
+  className,
+  children,
+  ...props
+}: React.DetailedHTMLProps<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>,
+  HTMLAnchorElement
+>) => (
+  <a
+    ref={ref}
+    className={cn(
+      "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-zinc-800 hover:text-zinc-100 focus:bg-zinc-800 focus:text-zinc-100",
+      className
+    )}
+    {...props}
+  >
+    <div className="text-sm font-medium leading-none">{title}</div>
+    <p className="line-clamp-2 text-sm leading-snug text-zinc-400">
+      {children}
+    </p>
+  </a>
+);
