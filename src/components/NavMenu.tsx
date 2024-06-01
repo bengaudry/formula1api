@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import NextLink from "next/link";
 
 import { cn } from "@/lib/utils";
@@ -18,7 +18,6 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetDescription,
   SheetClose,
 } from "./ui/sheet";
 import { Button, Link } from "./ui/button";
@@ -30,7 +29,7 @@ import {
   AccordionContent,
 } from "./ui/accordion";
 
-const components: { title: string; href: string; description: string }[] = [
+const playgroundMenuElements: { title: string; href: string; description: string }[] = [
   {
     title: "Race results",
     href: "/playground/race-results",
@@ -66,15 +65,13 @@ export function NavMenu() {
         <SheetContent className="md:hidden">
           <SheetHeader className="text-left">
             <SheetTitle>Menu</SheetTitle>
-            <SheetDescription>
-              Make changes to your profile here. Click save when you're done.
-            </SheetDescription>
           </SheetHeader>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
+
+          <Accordion type="single" collapsible defaultValue="playground">
+            <AccordionItem value="playground" >
               <AccordionTrigger>Playground</AccordionTrigger>
               <AccordionContent>
-                {components.map(({ title, href, description }) => (
+                {playgroundMenuElements.map(({ title, href, description }) => (
                   <SheetClose asChild>
                     <NavItem href={href} title={title}>
                       {description}
@@ -84,11 +81,29 @@ export function NavMenu() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <SheetClose asChild className="w-full">
-            <Link href="/docs" variant="secondary" className="w-full mt-4">
-              Documentation
-            </Link>
-          </SheetClose>
+
+          <div className="py-4 flex flex-col gap-2">
+            <SheetClose asChild className="w-full">
+              <Link
+                href="/search"
+                variant="secondary"
+                className="w-full flex flex-row gap-2"
+              >
+                <Icon name="search" />
+                Search
+              </Link>
+            </SheetClose>
+            <SheetClose asChild className="w-full">
+              <Link
+                href="/docs"
+                variant="outline"
+                className="w-full flex flex-row gap-2"
+              >
+                <Icon name="book" />
+                Documentation
+              </Link>
+            </SheetClose>
+          </div>
         </SheetContent>
       </Sheet>
 
@@ -98,7 +113,7 @@ export function NavMenu() {
             <NavigationMenuTrigger>Playground</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                {components.map((component) => (
+                {playgroundMenuElements.map((component) => (
                   <ListItem
                     key={component.title}
                     title={component.title}
