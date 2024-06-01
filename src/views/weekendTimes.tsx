@@ -11,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { YearSelector } from "@/components/YearSelector";
 
 function ResizableColumnsContainer({
   location,
@@ -24,7 +25,7 @@ function ResizableColumnsContainer({
   const [fp3Data, setfp3Data] = useState<FreePractice | null>(null);
   const [qualifyingData, setQualifyingData] = useState<Qualifying | null>(null);
 
-  const [showTeams, setShowTeams] = useState(true);
+  const [showTeams, setShowTeams] = useState(false);
   const [yearQuery, setYearQuery] = useState(year);
   const [locationQuery, setLocationQuery] = useState(location);
 
@@ -64,7 +65,7 @@ function ResizableColumnsContainer({
   return (
     <>
       <div className="flex flex-col gap-2 mb-4">
-        <label className="flex flex-row items-center text-zinc-400 gap-2">
+        <label className="flex flex-row items-center text-zinc-400 gap-2 w-fit">
           <span>Show teams</span>
           <Checkbox
             onCheckedChange={(c) => setShowTeams(c as boolean)}
@@ -77,19 +78,9 @@ function ResizableColumnsContainer({
             value={locationQuery}
             onChange={({ target }) => setLocationQuery(target.value)}
           />
-          <Select onValueChange={setYearQuery} defaultValue={yearQuery}>
-            <SelectTrigger>
-              <SelectValue placeholder="Select a year" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="2024">
-                2024
-              </SelectItem>
-            </SelectContent>
-          </Select>
+          <YearSelector year={yearQuery} onChangeYear={setYearQuery} />
         </div>
       </div>
-
 
       <div className="overflow-x-auto">
         <div className="min-w-[800px] overflow-x-auto">

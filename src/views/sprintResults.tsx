@@ -115,7 +115,7 @@ export function SprintResults() {
             <p className="text-zinc-400">{data?.circuit}</p>
           </header>
 
-          <ul className="max-w-screen-md mx-auto px-2">
+          <ul className="px-2">
             {data?.results.map(
               (
                 { position, car, teamColor, driver, laps, points, time },

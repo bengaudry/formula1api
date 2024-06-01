@@ -86,8 +86,9 @@ export function RaceResults() {
   }, []);
 
   return (
-    <div className="py-6">
-      <div className="w-full flex justify-center items-center my-4 gap-2 px-6">
+    <>
+      <h2 className="text-2xl font-semibold">Race results</h2>
+      <div className="w-full flex justify-center items-center my-4 gap-2">
         <Input
           type="text"
           placeholder="Location (try monaco, imola...)"
@@ -95,7 +96,10 @@ export function RaceResults() {
           onChange={({ target }) => setSelectedLocation(target.value)}
           onBlur={getRaceData}
         />
-        <Select onValueChange={(val) => setSelectedYear(parseInt(val))}>
+        <Select
+          onValueChange={(val) => setSelectedYear(parseInt(val))}
+          defaultValue={selectedYear.toString()}
+        >
           <SelectTrigger>
             <SelectValue placeholder="Select a year" />
           </SelectTrigger>
@@ -119,8 +123,8 @@ export function RaceResults() {
         </p>
       ) : (
         <>
-          <header className="py-3 px-6 text-center">
-            <h1 className="text-2xl font-bold max-w-screen-md mx-auto overflow-visible">
+          <header className="py-3 text-center">
+            <h1 className="text-2xl font-bold overflow-visible">
               {data?.session_name}
             </h1>
             <p className="text-zinc-400">{data?.circuit}</p>
@@ -132,6 +136,6 @@ export function RaceResults() {
           {data && !("isOver" in data) && <RaceResultsDisplayer data={data} />}
         </>
       )}
-    </div>
+    </>
   );
 }

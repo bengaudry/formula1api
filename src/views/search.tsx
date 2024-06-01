@@ -34,22 +34,22 @@ export function Search() {
           value={query}
           onChange={({ target }) => setQuery(target.value)}
         />
-        <Button
-          type="submit"
-        >
+        <Button type="submit" disabled={query.length < 3 || isLoading}>
           {isLoading ? "..." : "Search"}
         </Button>
       </form>
 
-      {data && (
+      {data && !isLoading && (
         <div className="px-4">
           <span className="text-zinc-400 text-sm">
             Found in {requestDuration / 1000} s
           </span>
           <Link
-            href={data.href}
+            href={`/playground/race-results?year=${2024}&location=${
+              data.location
+            }`}
             target="_blank"
-            className="block bg-zinc-800 rounded-xl px-6 py-3"
+            className="block bg-zinc-800 hover:bg-zinc-700 transition-all duration-200 rounded-md px-6 py-3"
           >
             <span className="text-lg font-semibold">{data.gp_name}</span>
             <br />
