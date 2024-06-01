@@ -1,25 +1,24 @@
 "use client";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useState,
+} from "react";
 import { Container, Section, Bar } from "@column-resizer/react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { YearSelector } from "@/components/YearSelector";
+import { useRouter } from "next/navigation";
 
-function ResizableColumnsContainer({
-  location,
-  year,
-}: {
-  location?: string;
-  year?: string;
-}) {
+function ResizableColumnsContainer() {
+  const params = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+  const location = params.get("location") ?? "";
+  const year = params.get("year") ?? "";
+
   const [fp1Data, setfp1Data] = useState<FreePractice | null>(null);
   const [fp2Data, setfp2Data] = useState<FreePractice | null>(null);
   const [fp3Data, setfp3Data] = useState<FreePractice | null>(null);
@@ -28,6 +27,15 @@ function ResizableColumnsContainer({
   const [showTeams, setShowTeams] = useState(false);
   const [yearQuery, setYearQuery] = useState(year);
   const [locationQuery, setLocationQuery] = useState(location);
+
+  const updateSearchQuery = (location: string, year: string) => {
+    const p = new URLSearchParams(params);
+    p.set("location", location);
+    p.set("year", year);
+    const queryString = p.toString();
+    const updatedPath = queryString ? `${pathname}?${queryString}` : pathname;
+    router.push(updatedPath);
+  };
 
   useEffect(() => {
     function fetchData<T>(
@@ -76,9 +84,18 @@ function ResizableColumnsContainer({
           <Input
             type="text"
             value={locationQuery}
-            onChange={({ target }) => setLocationQuery(target.value)}
+            onChange={({ target }) => {
+              updateSearchQuery(target.value, year)
+              setLocationQuery(target.value);
+            }}
           />
-          <YearSelector year={yearQuery} onChangeYear={setYearQuery} />
+          <YearSelector
+            year={yearQuery}
+            onChangeYear={(year) => {
+              updateSearchQuery(locationQuery, year);
+              setYearQuery(year);
+            }}
+          />
         </div>
       </div>
 
@@ -185,17 +202,10 @@ function ResizableColumnsContainer({
 }
 
 export function WeekendTimes() {
-  const params = useSearchParams();
-  const location = params.get("location");
-  const year = params.get("year");
-
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Comparative times table</h1>
-      <ResizableColumnsContainer
-        location={location ?? undefined}
-        year={year ?? undefined}
-      />
+      <ResizableColumnsContainer />
     </div>
   );
 }

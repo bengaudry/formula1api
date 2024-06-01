@@ -103,6 +103,16 @@ export function NavMenu() {
                 Documentation
               </Link>
             </SheetClose>
+            <SheetClose asChild className="w-full">
+              <Link
+                href="/admin"
+                variant="outline"
+                className="w-full flex flex-row gap-2"
+              >
+                <Icon name="lock" />
+                Admin
+              </Link>
+            </SheetClose>
           </div>
         </SheetContent>
       </Sheet>
