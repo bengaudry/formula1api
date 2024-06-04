@@ -16,6 +16,13 @@ export default ({ children }: { children: React.ReactNode }) => {
           >
             Drivers
           </Link>
+          <Link
+            href="/admin/dashboard/teams"
+            variant="outline"
+            className="w-full"
+          >
+            Teams
+          </Link>
         </div>
       </aside>
       <main className="p-4 w-full h-full overflow-y-scroll">{children}</main>

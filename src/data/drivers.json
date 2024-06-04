@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Max",
+    "lastName": "Verstappen",
+    "abbr": "VER",
+    "carNb": 1,
+    "nationality": "NET"
+  },
+  {
+    "name": "Lewis",
+    "lastName": "Hamilton",
+    "abbr": "HAM",
+    "carNb": 44,
+    "nationality": "GBR"
+  },
+  {
+    "name": "Charles",
+    "lastName": "Leclerc",
+    "abbr": "LEC",
+    "carNb": 16,
+    "nationality": "MON"
+  },
+  {
+    "name": "Carlos",
+    "lastName": "Sainz",
+    "abbr": "SAI",
+    "carNb": 55,
+    "nationality": "SPA"
+  },
+  {
+    "name": "Oscar",
+    "lastName": "Piastri",
+    "abbr": "PIA",
+    "carNb": 81,
+    "nationality": "AUS"
+  }
+]
