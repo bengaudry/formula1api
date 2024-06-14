@@ -5,7 +5,7 @@ import { cwd } from "process";
 
 // Fonction pour gérer les requêtes POST
 export async function GET(req: NextRequest) {
-  console.info(cwd());
+  console.info("Current working directory", cwd());
   try {
     const params = req.nextUrl.searchParams;
     const crawlerType = params.get("crawler");
@@ -14,27 +14,50 @@ export async function GET(req: NextRequest) {
     const id = params.get("id");
 
     if (!crawlerType || !year || !location || !id) {
-      return NextResponse.json({ error: "Missing parameters (expected : year, location, id, crawler)" }, { status: 400 });
+      return NextResponse.json(
+        {
+          error: "Missing parameters (expected : year, location, id, crawler)",
+        },
+        { status: 400 }
+      );
     }
 
-    exec("python full_weekend.py 2024 canada 1237", { cwd: path.join(cwd(), "../crawlers") }, (err, stdout, stderr) => {
-      if (err) {
-        // node couldn't execute the command
-        console.error("!! Node couldn't execute the command !!");
-        console.log(err);
-        return;
-      }
+    const execDir = path.join(cwd(), "src", "crawlers");
+    console.info("exec dir :", execDir);
 
-      // the *entire* stdout and stderr (buffered)
-      console.info(`stdout: ${stdout}`);
-      console.error(`stderr: ${stderr}`);
-    });
+    exec(
+      "python full_weekend.py 2024 canada 1237",
+      { cwd: execDir },
+      (err, stdout, stderr) => {
+        // the *entire* stdout (buffered)
+        console.info(`stdout: ${stdout}`);
+        console.info(`stderr: ${stderr}`);
+
+        if (err) {
+          // node couldn't execute the command
+          console.error("!! Node couldn't execute the command !!");
+          console.log(err);
+          return NextResponse.json(
+            { error: "Internal Server Error", details: err },
+            { status: 500 }
+          );
+        }
+
+        if (stderr && stderr !== "") {
+          // node couldn't execute the command
+          console.error("!! Node couldn't execute the command (stderr) !!");
+          return NextResponse.json(
+            { error: "Internal Server Error", details: stderr },
+            { status: 500 }
+          );
+        }
+      }
+    );
 
     return NextResponse.json(null, { status: 200 });
   } catch (error) {
-    console.error("Error processing request", error);
     return NextResponse.json(
-      { error: "Internal Server Error" },
+      { error: "Internal Server Error", details: error },
       { status: 500 }
     );
   }
