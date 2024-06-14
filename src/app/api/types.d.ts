@@ -86,3 +86,6 @@ type SeasonStructure = {
     isOver: boolean;
   }>;
 };
+
+// API
+type Crawler = F1DataType | "full-weekend" | "sprint-weekend";

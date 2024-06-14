@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import NextLink from "next/link"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@flaticon/flaticon-uicons/css/regular/rounded.css";
-import { NavMenu } from "@/components/NavMenu";
-import { Link } from "@/components/ui/button";
-import { Icon } from "@/components/ui/icon";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Formula 1 api",
@@ -22,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className + " text-zinc-100 bg-zinc-950"}>
+      <body className={font.className + " text-zinc-100 bg-zinc-950"}>
         {children}
       </body>
     </html>

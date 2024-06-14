@@ -23,6 +23,20 @@ export default ({ children }: { children: React.ReactNode }) => {
           >
             Teams
           </Link>
+          <Link
+            href="/admin/dashboard/explorer"
+            variant="outline"
+            className="w-full"
+          >
+            Explorer
+          </Link>
+          <Link
+            href="/admin/dashboard/run-crawler"
+            variant="outline"
+            className="w-full"
+          >
+            Run crawler
+          </Link>
         </div>
       </aside>
       <main className="p-4 w-full h-full overflow-y-scroll">{children}</main>

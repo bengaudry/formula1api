@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { capitalizeFirstLetter } from "@/lib/str";
 import path from "path";
 import * as fs from "fs";
 
@@ -11,10 +12,6 @@ function keysin(keys: Array<string>, obj: any): [string | null, boolean] {
     i++;
   }
   return [null, true];
-}
-
-function capitalizeFirstLetter(str: string) {
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
 
 // Fonction pour gérer les requêtes POST
