@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { fetchPracticeResults } from "@/jscrawlers/scripts/practice";
 import { fetchQualifyingResults } from "@/jscrawlers/scripts/qualifying";
+import { fetchGrid } from "@/jscrawlers/scripts/grid";
+import { fetchRaceResults } from "@/jscrawlers/scripts/results";
 
 function extractPracticeNb(crawlerType: Crawler) {
   if (crawlerType.startsWith("fp")) {
@@ -8,6 +10,30 @@ function extractPracticeNb(crawlerType: Crawler) {
     return [1, 2, 3].includes(nb) ? (nb as 1 | 2 | 3) : undefined;
   }
   return;
+}
+
+async function fetchFullWeekend(
+  { year, location, id }: { year: string; location: string; id: string },
+  resolve: (val: any) => void,
+  reject: (val: any) => void
+) {
+  Array.from<1 | 2 | 3>([1, 2, 3]).map(async (practiceNb) => {
+    const practiceResults = await fetchPracticeResults({
+      year,
+      id,
+      location,
+      practiceNb,
+    });
+  });
+
+  const qualiResults = await fetchQualifyingResults({ year, id, location });
+  if (!qualiResults) return resolve(null);
+
+  const gridResults = await fetchGrid({ year, id, location });
+  if (!gridResults) return resolve(null);
+
+  const raceResults = await fetchRaceResults({ year, id, location });
+  if (!raceResults) return resolve(null);
 }
 
 async function fetchDataWithCrawler(
@@ -38,6 +64,33 @@ async function fetchDataWithCrawler(
           isSprint: crawler.split("-")[0] === "sprint",
         });
         if (!results) return resolve(null);
+        return resolve("Generated data successfully");
+      }
+
+      if (["race-grid", "sprint-grid"].includes(crawler)) {
+        const results = await fetchGrid({
+          year: year,
+          id: id,
+          location: location,
+          isSprint: crawler.split("-")[0] === "sprint",
+        });
+        if (!results) return resolve(null);
+        return resolve("Generated data successfully");
+      }
+
+      if (["race-results", "sprint-results"].includes(crawler)) {
+        const results = await fetchRaceResults({
+          year: year,
+          id: id,
+          location: location,
+          isSprint: crawler.split("-")[0] === "sprint",
+        });
+        if (!results) return resolve(null);
+        return resolve("Generated data successfully");
+      }
+
+      if (crawler === "full-weekend") {
+        await fetchFullWeekend({ year, id, location }, resolve, reject);
         return resolve("Generated data successfully");
       }
 

@@ -1,19 +1,14 @@
-import {
-  extractDriverInfo,
-  findSessionInfo,
-  getTeamColor,
-  parseUrlContent,
-} from "../lib/common";
+import { extractDriverInfo, parseUrlContent } from "../lib/common";
 import { writeData } from "../lib/export";
 import { URL_BASE } from "../lib/constants";
 
-interface QualifyingResult {
-  position: number;
+interface RaceResult {
+  position: number | null;
   driver: Driver;
   car: string;
-  teamColor: string;
-  times: { q1: string; q2: string; q3: string };
   laps: number;
+  time: string;
+  points: number;
 }
 
 interface Params {
@@ -23,7 +18,7 @@ interface Params {
   isSprint?: boolean;
 }
 
-export async function fetchQualifyingResults({
+export async function fetchRaceResults({
   year,
   id,
   location,
@@ -36,13 +31,11 @@ export async function fetchQualifyingResults({
 
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
 
-    const results: QualifyingResult[] = [];
+    const results: RaceResult[] = [];
 
     tableRows.each((_, row) => {
-      const position = parseInt(
-        $(row).find("td:nth-child(2)").text().trim(),
-        10
-      );
+      const rawPosition = $(row).find("td:nth-child(2)").text().trim();
+      const position = rawPosition === "NC" ? null : parseInt(rawPosition);
       const number = parseInt($(row).find("td:nth-child(3)").text().trim(), 10);
       const rawDriver = $(row)
         .find("td:nth-child(4)")
@@ -51,25 +44,28 @@ export async function fetchQualifyingResults({
         .replace(/\s+/g, " ");
       const driver = { ...extractDriverInfo(rawDriver), number };
       const car = $(row).find("td:nth-child(5)").text().trim();
-      const teamColor = getTeamColor(car) ?? "";
-      const times = {
-        q1: $(row).find("td:nth-child(6)").text().trim() ?? null,
-        q2: $(row).find("td:nth-child(7)").text().trim() ?? null,
-        q3: $(row).find("td:nth-child(8)").text().trim() ?? null,
-      };
-      const laps = parseInt($(row).find("td:nth-child(9)").text().trim(), 10);
+      const laps = parseInt($(row).find("td:nth-child(6)").text().trim());
+      const time = $(row).find("td:nth-child(7)").text().trim();
+      const points = parseInt($(row).find("td:nth-child(7)").text().trim());
 
-      results.push({ position, driver, car, teamColor, times, laps });
+      results.push({
+        position,
+        driver,
+        car,
+        laps,
+        time,
+        points,
+      });
     });
 
     writeData(results, {
       id,
-      dataType: isSprint ? "sprint-qualifying" : "race-qualifying",
+      dataType: `${isSprint ? "sprint" : "race"}-results`,
       year,
       sessionName,
       circuit,
       location,
-      fileName: `${isSprint ? "sprint" : "race"}_qualifying`,
+      fileName: `${isSprint ? "sprint" : "race"}_results`,
     });
     return results;
   } catch (error) {
