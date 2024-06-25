@@ -1,5 +1,5 @@
 "use server";
-
+import { put } from "@vercel/blob";
 import path from "path";
 import { cwd } from "process";
 import * as fs from "fs";
@@ -42,4 +42,12 @@ export async function writeData(
   };
   const jsonContent = JSON.stringify(obj, null, 2);
   fs.writeFileSync(path.join(fileDir, fileName), jsonContent);
+
+  const blob = await put(
+    `${year}/${location}/${fileName}.json`,
+    JSON.stringify(obj),
+    { access: "public", contentType: "application/json", addRandomSuffix: false }
+  );
+
+  console.log("blob :", blob);
 }

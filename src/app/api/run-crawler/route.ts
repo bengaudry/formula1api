@@ -38,7 +38,7 @@ async function fetchDataWithCrawler(
           isSprint: crawler.split("-")[0] === "sprint",
         });
         if (!results) return resolve(null);
-        return resolve(results);
+        return resolve("Generated data successfully");
       }
 
       throw new Error("Invalid crawler");
@@ -66,12 +66,6 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    // console.log("exec dir :", execDir);
-
-    // const cmdout = exec(cmd, { cwd: execDir });
-    // cmdout
-    //   .then((value) => console.log("VALUE :", value))
-    //   .catch((err) => console.error("ERRRRROR :", err));
     const results = await fetchDataWithCrawler(crawlerType, {
       year,
       location,

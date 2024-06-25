@@ -70,7 +70,7 @@ export async function fetchQualifyingResults({
       sessionName,
       circuit,
       location,
-      fileName: `${isSprint ? "sprint" : "race"}_qualifying.json`,
+      fileName: `${isSprint ? "sprint" : "race"}_qualifying`,
     });
     return results;
   } catch (error) {

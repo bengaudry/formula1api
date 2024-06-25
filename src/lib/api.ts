@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import { list } from "@vercel/blob";
+
+const crawlerNameToFileName = (crawler: string) => {
+  return `${crawler.replaceAll("-", "_")}.json`;
+};
+
+const exitWithError = (error: string, status: number = 500) => {
+  return NextResponse.json({ error }, { status });
+};
 
 export async function fetchWeekendData<T>(
   apiName: F1DataType | string,
@@ -11,27 +18,25 @@ export async function fetchWeekendData<T>(
     const location = params.get("location");
 
     if (!year || !location)
-      throw new Error(
+      return exitWithError(
         "Parameter missing : please provide either id or year and location"
       );
 
-    const dataDir = path.join(process.cwd(), "src", "data");
-    const fileContent = await fs.readFile(
-      path.join(
-        dataDir,
-        year,
-        location,
-        `${apiName.replaceAll("-", "_")}.json`
-      ),
-      "utf-8"
-    );
-    const data = JSON.parse(fileContent);
-    if (!data || "error" in data) throw new Error();
+    const l = await list();
+    if (!l || l.blobs.length <= 0) return exitWithError("No data found");
+
+    const { blobs } = l;
+    const pathName = `${year}/${location}/${crawlerNameToFileName(apiName)}`;
+    const blob = blobs.find((b) => b.pathname === pathName);
+
+    if (!blob) return exitWithError("Data not found");
+
+    const req = await fetch(blob?.url);
+    if (!req.ok) return exitWithError("Error in data (No body provided)");
+    const data = await req.json();
+
     return NextResponse.json(data, { status: 200 }) as NextResponse<T>;
   } catch (err) {
-    return NextResponse.json(
-      { error: "Failed to fetch data", details: err },
-      { status: 200 }
-    );
+    return exitWithError("Failed to fetch data");
   }
 }

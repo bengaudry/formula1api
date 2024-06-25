@@ -65,7 +65,7 @@ export async function fetchPracticeResults({
       sessionName,
       circuit,
       location,
-      fileName: `fp${practiceNb}_results.json`,
+      fileName: `fp${practiceNb}_results`,
     });
     return results;
   } catch (error) {
