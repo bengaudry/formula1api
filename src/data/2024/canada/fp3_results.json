@@ -1,292 +1,271 @@
 {
-    "id": "1237_fp3",
-    "weekendid": "1237",
-    "data_type": "fp3",
-    "year": "2024",
-    "location": "canada",
-    "gp_name": "FORMULA 1 AWS GRAND PRIX DU CANADA 2024",
-    "session_name": "FORMULA 1 AWS GRAND PRIX DU CANADA 2024 - PRACTICE 3",
-    "circuit": "Circuit Gilles-Villeneuve, Montr\u00e9al",
-    "results": [
-        {
-            "position": 1,
-            "driver": {
-                "firstName": "Lewis",
-                "lastName": "Hamilton",
-                "abbr": "HAM",
-                "number": 44
-            },
-            "car": "Mercedes",
-            "teamColor": "rgb(39,244,210)",
-            "time": "1:12.549",
-            "gap": null,
-            "laps": 31
-        },
-        {
-            "position": 2,
-            "driver": {
-                "firstName": "Max",
-                "lastName": "Verstappen",
-                "abbr": "VER",
-                "number": 1
-            },
-            "car": "Red Bull Racing Honda RBPT",
-            "teamColor": "rgb(54,113,198)",
-            "time": "1:12.923",
-            "gap": "+0.374s",
-            "laps": 32
-        },
-        {
-            "position": 3,
-            "driver": {
-                "firstName": "George",
-                "lastName": "Russell",
-                "abbr": "RUS",
-                "number": 63
-            },
-            "car": "Mercedes",
-            "teamColor": "rgb(39,244,210)",
-            "time": "1:12.957",
-            "gap": "+0.408s",
-            "laps": 33
-        },
-        {
-            "position": 4,
-            "driver": {
-                "firstName": "Lance",
-                "lastName": "Stroll",
-                "abbr": "STR",
-                "number": 18
-            },
-            "car": "Aston Martin Aramco Mercedes",
-            "teamColor": "rgb(34,153,113)",
-            "time": "1:13.026",
-            "gap": "+0.477s",
-            "laps": 27
-        },
-        {
-            "position": 5,
-            "driver": {
-                "firstName": "Oscar",
-                "lastName": "Piastri",
-                "abbr": "PIA",
-                "number": 81
-            },
-            "car": "McLaren Mercedes",
-            "teamColor": "rgb(255,128,0)",
-            "time": "1:13.266",
-            "gap": "+0.717s",
-            "laps": 32
-        },
-        {
-            "position": 6,
-            "driver": {
-                "firstName": "Daniel",
-                "lastName": "Ricciardo",
-                "abbr": "RIC",
-                "number": 3
-            },
-            "car": "RB Honda RBPT",
-            "teamColor": "rgb(102,146,255)",
-            "time": "1:13.279",
-            "gap": "+0.730s",
-            "laps": 34
-        },
-        {
-            "position": 7,
-            "driver": {
-                "firstName": "Lando",
-                "lastName": "Norris",
-                "abbr": "NOR",
-                "number": 4
-            },
-            "car": "McLaren Mercedes",
-            "teamColor": "rgb(255,128,0)",
-            "time": "1:13.293",
-            "gap": "+0.744s",
-            "laps": 32
-        },
-        {
-            "position": 8,
-            "driver": {
-                "firstName": "Fernando",
-                "lastName": "Alonso",
-                "abbr": "ALO",
-                "number": 14
-            },
-            "car": "Aston Martin Aramco Mercedes",
-            "teamColor": "rgb(34,153,113)",
-            "time": "1:13.340",
-            "gap": "+0.791s",
-            "laps": 30
-        },
-        {
-            "position": 9,
-            "driver": {
-                "firstName": "Sergio",
-                "lastName": "Perez",
-                "abbr": "PER",
-                "number": 11
-            },
-            "car": "Red Bull Racing Honda RBPT",
-            "teamColor": "rgb(54,113,198)",
-            "time": "1:13.342",
-            "gap": "+0.793s",
-            "laps": 29
-        },
-        {
-            "position": 10,
-            "driver": {
-                "firstName": "Charles",
-                "lastName": "Leclerc",
-                "abbr": "LEC",
-                "number": 16
-            },
-            "car": "Ferrari",
-            "teamColor": "rgb(232,0,32)",
-            "time": "1:13.349",
-            "gap": "+0.800s",
-            "laps": 28
-        },
-        {
-            "position": 11,
-            "driver": {
-                "firstName": "Kevin",
-                "lastName": "Magnussen",
-                "abbr": "MAG",
-                "number": 20
-            },
-            "car": "Haas Ferrari",
-            "teamColor": "rgb(182,186,189)",
-            "time": "1:13.439",
-            "gap": "+0.890s",
-            "laps": 30
-        },
-        {
-            "position": 12,
-            "driver": {
-                "firstName": "Carlos",
-                "lastName": "Sainz",
-                "abbr": "SAI",
-                "number": 55
-            },
-            "car": "Ferrari",
-            "teamColor": "rgb(232,0,32)",
-            "time": "1:13.570",
-            "gap": "+1.021s",
-            "laps": 33
-        },
-        {
-            "position": 13,
-            "driver": {
-                "firstName": "Valtteri",
-                "lastName": "Bottas",
-                "abbr": "BOT",
-                "number": 77
-            },
-            "car": "Kick Sauber Ferrari",
-            "teamColor": "rgb(82,226,82)",
-            "time": "1:13.642",
-            "gap": "+1.093s",
-            "laps": 32
-        },
-        {
-            "position": 14,
-            "driver": {
-                "firstName": "Logan",
-                "lastName": "Sargeant",
-                "abbr": "SAR",
-                "number": 2
-            },
-            "car": "Williams Mercedes",
-            "teamColor": "rgb(100,196,255)",
-            "time": "1:13.663",
-            "gap": "+1.114s",
-            "laps": 31
-        },
-        {
-            "position": 15,
-            "driver": {
-                "firstName": "Yuki",
-                "lastName": "Tsunoda",
-                "abbr": "TSU",
-                "number": 22
-            },
-            "car": "RB Honda RBPT",
-            "teamColor": "rgb(102,146,255)",
-            "time": "1:13.716",
-            "gap": "+1.167s",
-            "laps": 31
-        },
-        {
-            "position": 16,
-            "driver": {
-                "firstName": "Pierre",
-                "lastName": "Gasly",
-                "abbr": "GAS",
-                "number": 10
-            },
-            "car": "Alpine Renault",
-            "teamColor": "rgb(0,147,204)",
-            "time": "1:13.737",
-            "gap": "+1.188s",
-            "laps": 29
-        },
-        {
-            "position": 17,
-            "driver": {
-                "firstName": "Nico",
-                "lastName": "Hulkenberg",
-                "abbr": "HUL",
-                "number": 27
-            },
-            "car": "Haas Ferrari",
-            "teamColor": "rgb(182,186,189)",
-            "time": "1:13.777",
-            "gap": "+1.228s",
-            "laps": 27
-        },
-        {
-            "position": 18,
-            "driver": {
-                "firstName": "Alexander",
-                "lastName": "Albon",
-                "abbr": "ALB",
-                "number": 23
-            },
-            "car": "Williams Mercedes",
-            "teamColor": "rgb(100,196,255)",
-            "time": "1:13.880",
-            "gap": "+1.331s",
-            "laps": 22
-        },
-        {
-            "position": 19,
-            "driver": {
-                "firstName": "Esteban",
-                "lastName": "Ocon",
-                "abbr": "OCO",
-                "number": 31
-            },
-            "car": "Alpine Renault",
-            "teamColor": "rgb(0,147,204)",
-            "time": "1:14.075",
-            "gap": "+1.526s",
-            "laps": 31
-        },
-        {
-            "position": 20,
-            "driver": {
-                "firstName": "Zhou",
-                "lastName": "Guanyu",
-                "abbr": "ZHO",
-                "number": 24
-            },
-            "car": "Kick Sauber Ferrari",
-            "teamColor": "rgb(82,226,82)",
-            "time": "1:18.656",
-            "gap": "+6.107s",
-            "laps": 4
-        }
-    ]
+  "id": "1237",
+  "dataType": "fp3",
+  "year": "2024",
+  "location": "canada",
+  "gpName": "FORMULA 1 AWS GRAND PRIX DU CANADA 2024",
+  "sessionName": "FORMULA 1 AWS GRAND PRIX DU CANADA 2024 - PRACTICE 3",
+  "circuit": "Circuit Gilles-Villeneuve, Montréal",
+  "results": [
+    {
+      "position": 1,
+      "driver": {
+        "firstName": "Lewis",
+        "lastName": "Hamilton",
+        "abbr": "HAM",
+        "number": 44
+      },
+      "car": "Mercedes",
+      "time": "1:12.549",
+      "gap": "",
+      "laps": 31
+    },
+    {
+      "position": 2,
+      "driver": {
+        "firstName": "Max",
+        "lastName": "Verstappen",
+        "abbr": "VER",
+        "number": 1
+      },
+      "car": "Red Bull Racing Honda RBPT",
+      "time": "1:12.923",
+      "gap": "+0.374s",
+      "laps": 32
+    },
+    {
+      "position": 3,
+      "driver": {
+        "firstName": "George",
+        "lastName": "Russell",
+        "abbr": "RUS",
+        "number": 63
+      },
+      "car": "Mercedes",
+      "time": "1:12.957",
+      "gap": "+0.408s",
+      "laps": 33
+    },
+    {
+      "position": 4,
+      "driver": {
+        "firstName": "Lance",
+        "lastName": "Stroll",
+        "abbr": "STR",
+        "number": 18
+      },
+      "car": "Aston Martin Aramco Mercedes",
+      "time": "1:13.026",
+      "gap": "+0.477s",
+      "laps": 27
+    },
+    {
+      "position": 5,
+      "driver": {
+        "firstName": "Oscar",
+        "lastName": "Piastri",
+        "abbr": "PIA",
+        "number": 81
+      },
+      "car": "McLaren Mercedes",
+      "time": "1:13.266",
+      "gap": "+0.717s",
+      "laps": 32
+    },
+    {
+      "position": 6,
+      "driver": {
+        "firstName": "Daniel",
+        "lastName": "Ricciardo",
+        "abbr": "RIC",
+        "number": 3
+      },
+      "car": "RB Honda RBPT",
+      "time": "1:13.279",
+      "gap": "+0.730s",
+      "laps": 34
+    },
+    {
+      "position": 7,
+      "driver": {
+        "firstName": "Lando",
+        "lastName": "Norris",
+        "abbr": "NOR",
+        "number": 4
+      },
+      "car": "McLaren Mercedes",
+      "time": "1:13.293",
+      "gap": "+0.744s",
+      "laps": 32
+    },
+    {
+      "position": 8,
+      "driver": {
+        "firstName": "Fernando",
+        "lastName": "Alonso",
+        "abbr": "ALO",
+        "number": 14
+      },
+      "car": "Aston Martin Aramco Mercedes",
+      "time": "1:13.340",
+      "gap": "+0.791s",
+      "laps": 30
+    },
+    {
+      "position": 9,
+      "driver": {
+        "firstName": "Sergio",
+        "lastName": "Perez",
+        "abbr": "PER",
+        "number": 11
+      },
+      "car": "Red Bull Racing Honda RBPT",
+      "time": "1:13.342",
+      "gap": "+0.793s",
+      "laps": 29
+    },
+    {
+      "position": 10,
+      "driver": {
+        "firstName": "Charles",
+        "lastName": "Leclerc",
+        "abbr": "LEC",
+        "number": 16
+      },
+      "car": "Ferrari",
+      "time": "1:13.349",
+      "gap": "+0.800s",
+      "laps": 28
+    },
+    {
+      "position": 11,
+      "driver": {
+        "firstName": "Kevin",
+        "lastName": "Magnussen",
+        "abbr": "MAG",
+        "number": 20
+      },
+      "car": "Haas Ferrari",
+      "time": "1:13.439",
+      "gap": "+0.890s",
+      "laps": 30
+    },
+    {
+      "position": 12,
+      "driver": {
+        "firstName": "Carlos",
+        "lastName": "Sainz",
+        "abbr": "SAI",
+        "number": 55
+      },
+      "car": "Ferrari",
+      "time": "1:13.570",
+      "gap": "+1.021s",
+      "laps": 33
+    },
+    {
+      "position": 13,
+      "driver": {
+        "firstName": "Valtteri",
+        "lastName": "Bottas",
+        "abbr": "BOT",
+        "number": 77
+      },
+      "car": "Kick Sauber Ferrari",
+      "time": "1:13.642",
+      "gap": "+1.093s",
+      "laps": 32
+    },
+    {
+      "position": 14,
+      "driver": {
+        "firstName": "Logan",
+        "lastName": "Sargeant",
+        "abbr": "SAR",
+        "number": 2
+      },
+      "car": "Williams Mercedes",
+      "time": "1:13.663",
+      "gap": "+1.114s",
+      "laps": 31
+    },
+    {
+      "position": 15,
+      "driver": {
+        "firstName": "Yuki",
+        "lastName": "Tsunoda",
+        "abbr": "TSU",
+        "number": 22
+      },
+      "car": "RB Honda RBPT",
+      "time": "1:13.716",
+      "gap": "+1.167s",
+      "laps": 31
+    },
+    {
+      "position": 16,
+      "driver": {
+        "firstName": "Pierre",
+        "lastName": "Gasly",
+        "abbr": "GAS",
+        "number": 10
+      },
+      "car": "Alpine Renault",
+      "time": "1:13.737",
+      "gap": "+1.188s",
+      "laps": 29
+    },
+    {
+      "position": 17,
+      "driver": {
+        "firstName": "Nico",
+        "lastName": "Hulkenberg",
+        "abbr": "HUL",
+        "number": 27
+      },
+      "car": "Haas Ferrari",
+      "time": "1:13.777",
+      "gap": "+1.228s",
+      "laps": 27
+    },
+    {
+      "position": 18,
+      "driver": {
+        "firstName": "Alexander",
+        "lastName": "Albon",
+        "abbr": "ALB",
+        "number": 23
+      },
+      "car": "Williams Mercedes",
+      "time": "1:13.880",
+      "gap": "+1.331s",
+      "laps": 22
+    },
+    {
+      "position": 19,
+      "driver": {
+        "firstName": "Esteban",
+        "lastName": "Ocon",
+        "abbr": "OCO",
+        "number": 31
+      },
+      "car": "Alpine Renault",
+      "time": "1:14.075",
+      "gap": "+1.526s",
+      "laps": 31
+    },
+    {
+      "position": 20,
+      "driver": {
+        "firstName": "Zhou",
+        "lastName": "Guanyu",
+        "abbr": "ZHO",
+        "number": 24
+      },
+      "car": "Kick Sauber Ferrari",
+      "time": "1:18.656",
+      "gap": "+6.107s",
+      "laps": 4
+    }
+  ]
 }

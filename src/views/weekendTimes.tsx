@@ -105,20 +105,20 @@ function ResizableColumnsContainer() {
             <Section minSize={50}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
                 <li className="px-2 py-1 bg-zinc-700">Practice 1</li>
-                {fp1Data?.results?.map(
-                  ({ car, driver, position, teamColor, time }) => (
+                {fp1Data?.results ? fp1Data.results.map(
+                  ({ car, driver, time }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
                       <div>
                         <span
                           className="inline-block h-5 w-2 mr-1 rounded-full"
-                          style={{ backgroundColor: teamColor }}
+                          // style={{ backgroundColor: teamColor }}
                         />
                         {driver.abbr}
                       </div>
                       {time} {showTeams && <>- {car}</>}
                     </li>
                   )
-                )}
+                ) : "No data yet"}
               </ul>
             </Section>
             <Bar
@@ -129,20 +129,20 @@ function ResizableColumnsContainer() {
             <Section minSize={100}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
                 <li className="px-2 py-1 bg-zinc-700">Practice 2</li>
-                {fp2Data?.results?.map(
-                  ({ car, driver, position, teamColor, time }) => (
+                {fp2Data?.results ? fp2Data.results.map(
+                  ({ car, driver, time }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
                       <div>
                         <span
                           className="inline-block h-5 w-2 mr-1 rounded-full"
-                          style={{ backgroundColor: teamColor }}
+                          // style={{ backgroundColor: teamColor }}
                         />
                         {driver.abbr}
                       </div>
                       {time} {showTeams && <>- {car}</>}
                     </li>
                   )
-                )}
+                ) : "No data yet"}
               </ul>
             </Section>
             <Bar
@@ -153,23 +153,23 @@ function ResizableColumnsContainer() {
             <Section minSize={100}>
               <ul className="flex flex-col w-full h-max whitespace-nowrap">
                 <li className="px-2 py-1 bg-zinc-700">Practice 3</li>
-                {fp3Data?.results?.map(
-                  ({ car, driver, position, teamColor, time }) => (
+                {fp3Data?.results ? fp3Data.results.map(
+                  ({ car, driver, time }) => (
                     <li className="flex flex-row items-center gap-1 whitespace-nowrap px-2">
                       <div>
                         <span
                           className="inline-block h-5 w-2 mr-1 rounded-full"
-                          style={{ backgroundColor: teamColor }}
+                          // style={{ backgroundColor: teamColor }}
                         />
                         {driver.abbr}
                       </div>
                       {time} {showTeams && <>- {car}</>}
                     </li>
                   )
-                )}
+                ) : "No data yet"}
               </ul>
             </Section>
-            <Bar
+            {/* <Bar
               size={5}
               className="bg-zinc-500 hover:bg-zinc-300 hover:scale-x-150 transition-all duration-150"
               style={{ cursor: "e-resize" }}
@@ -193,7 +193,7 @@ function ResizableColumnsContainer() {
                   )
                 )}
               </ul>
-            </Section>
+            </Section> */}
           </Container>
         </div>
       </div>
