@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useFetch } from "@/hooks/useFetch";
-import { fetchPracticeResults } from "@/jscrawlers/scripts/practice";
+import { fetchPracticeResults } from "@/crawlers/scripts/practice";
 import { capitalizeFirstLetter } from "@/lib/str";
 import { Familjen_Grotesk } from "next/font/google";
 import { useEffect, useState } from "react";

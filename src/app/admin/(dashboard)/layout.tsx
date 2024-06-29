@@ -19,29 +19,36 @@ export default ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-row items-center w-screen h-screen overflow-hidden">
-      <aside className="h-full w-72 border-r py-4 border-zinc-800">
+    <div className="flex flex-col w-screen h-screen overflow-hidden">
+      <header className="border-b py-4 border-zinc-700 bg-zinc-900">
         <h2 className="text-lg font-medium px-4">Dashboard</h2>
-        <div className="mt-4 flex flex-col pr-4">
+        <div className="mt-2 flex overflow-x-scroll px-4">
           {links.map(({ name, href, external }) => {
-            const active = pathname === `/admin${href}`;
+            const active =
+              pathname === `/admin${href}` ||
+              (href === "/" && pathname === "/admin");
+
             return (
               <Link
                 href={external ? href : `/admin${href}`}
-                className={`${
-                  active
-                    ? "bg-blue-800/80"
-                    : "bg-transparent hover:bg-zinc-100/10"
-                } block w-full h-fit px-4 py-1 rounded-r-full transition-colors border-2 border-transparent`}
+                className={`
+                  hover:bg-zinc-800 hover:text-white ${
+                    active ? "text-white" : "text-zinc-500"
+                  } whitespace-nowrap transition-colors px-3 py-1 rounded-md text-sm`}
                 target={external ? "_blank" : "_self"}
               >
                 {name}
-                {external && <Icon name="exit" className="inline-block translate-y-0.5 ml-4 text-sm" />}
+                {external && (
+                  <Icon
+                    name="exit"
+                    className="inline-block translate-y-0.5 ml-4 text-sm"
+                  />
+                )}
               </Link>
             );
           })}
         </div>
-      </aside>
+      </header>
       <main className="p-4 w-full h-full overflow-y-scroll">{children}</main>
     </div>
   );

@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { fetchPracticeResults } from "@/jscrawlers/scripts/practice";
-import { fetchQualifyingResults } from "@/jscrawlers/scripts/qualifying";
-import { fetchGrid } from "@/jscrawlers/scripts/grid";
-import { fetchRaceResults } from "@/jscrawlers/scripts/results";
+import { fetchPracticeResults } from "@/crawlers/scripts/practice";
+import { fetchQualifyingResults } from "@/crawlers/scripts/qualifying";
+import { fetchGrid } from "@/crawlers/scripts/grid";
+import { fetchRaceResults } from "@/crawlers/scripts/results";
 
 function extractPracticeNb(crawlerType: Crawler) {
   if (crawlerType.startsWith("fp")) {
