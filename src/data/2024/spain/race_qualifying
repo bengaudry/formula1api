@@ -2,10 +2,12 @@
   "id": "1238",
   "dataType": "race-qualifying",
   "year": "2024",
-  "location": "spain",
-  "gpName": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA",
+  "url": "https://www.formula1.com/en/results.html/2024/races/1238/spain/qualifying.html",
   "sessionName": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024 - QUALIFYING",
   "circuit": "Circuit de Barcelona-Catalunya, Barcelona",
+  "location": "spain",
+  "fileName": "race_qualifying",
+  "gpName": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA",
   "results": [
     {
       "position": 1,

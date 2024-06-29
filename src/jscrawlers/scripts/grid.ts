@@ -19,10 +19,14 @@ interface Params {
 export async function fetchGrid({ year, id, location, isSprint }: Params) {
   try {
     const url = `${URL_BASE}/${year}/races/${id}/${location}/${
-      isSprint ? "sprint-qualifying" : "qualifying"
+      isSprint ? "sprint-grid" : "starting-grid"
     }.html`;
 
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
+
+    const sprintInSessName = sessionName.toLocaleLowerCase().includes("sprint");
+    if (!sprintInSessName && isSprint) return null;
+    if (sprintInSessName && !isSprint) return null;
 
     const results: Grid[] = [];
 
@@ -49,6 +53,7 @@ export async function fetchGrid({ year, id, location, isSprint }: Params) {
 
     writeData(results, {
       id,
+      url,
       dataType: `${isSprint ? "sprint" : "race"}-grid`,
       year,
       sessionName,

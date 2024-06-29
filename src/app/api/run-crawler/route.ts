@@ -12,28 +12,72 @@ function extractPracticeNb(crawlerType: Crawler) {
   return;
 }
 
-async function fetchFullWeekend(
-  { year, location, id }: { year: string; location: string; id: string },
-  resolve: (val: any) => void,
-  reject: (val: any) => void
-) {
-  Array.from<1 | 2 | 3>([1, 2, 3]).map(async (practiceNb) => {
-    const practiceResults = await fetchPracticeResults({
-      year,
-      id,
-      location,
-      practiceNb,
-    });
+async function fetchFullWeekend(params: {
+  year: string;
+  location: string;
+  id: string;
+}) {
+  Array.from<1 | 2 | 3>([1, 2, 3]).map(
+    (practiceNb) =>
+      new Promise(async (_, reject) => {
+        const practiceResults = await fetchPracticeResults({
+          ...params,
+          practiceNb,
+        });
+        if (!practiceResults) reject();
+      })
+  );
+
+  const qualiResults = await fetchQualifyingResults(params);
+  if (!qualiResults) return;
+
+  const gridResults = await fetchGrid(params);
+  if (!gridResults) return;
+
+  const raceResults = await fetchRaceResults(params);
+  if (!raceResults) return;
+}
+
+async function fetchSprintWeekend(params: {
+  year: string;
+  location: string;
+  id: string;
+}) {
+  // Practice session data
+  const practiceResults = await fetchPracticeResults({
+    ...params,
+    practiceNb: 1,
   });
+  if (!practiceResults) return;
 
-  const qualiResults = await fetchQualifyingResults({ year, id, location });
-  if (!qualiResults) return resolve(null);
+  // Sprint data
+  const sprintQualiResults = await fetchQualifyingResults({
+    ...params,
+    isSprint: true,
+  });
+  if (!sprintQualiResults) return;
 
-  const gridResults = await fetchGrid({ year, id, location });
-  if (!gridResults) return resolve(null);
+  const sprintGridResults = await fetchGrid({
+    ...params,
+    isSprint: true,
+  });
+  if (!sprintGridResults) return;
 
-  const raceResults = await fetchRaceResults({ year, id, location });
-  if (!raceResults) return resolve(null);
+  const sprintResults = await fetchRaceResults({
+    ...params,
+    isSprint: true,
+  });
+  if (!sprintResults) return;
+
+  // Race data
+  const qualiResults = await fetchQualifyingResults(params);
+  if (!qualiResults) return;
+
+  const gridResults = await fetchGrid(params);
+  if (!gridResults) return;
+
+  const raceResults = await fetchRaceResults(params);
+  if (!raceResults) return;
 }
 
 async function fetchDataWithCrawler(
@@ -90,11 +134,16 @@ async function fetchDataWithCrawler(
       }
 
       if (crawler === "full-weekend") {
-        await fetchFullWeekend({ year, id, location }, resolve, reject);
+        await fetchFullWeekend({ year, id, location });
         return resolve("Generated data successfully");
       }
 
-      throw new Error("Invalid crawler");
+      if (crawler === "sprint-weekend") {
+        await fetchSprintWeekend({ year, id, location });
+        return resolve("Generated data successfully");
+      }
+
+      throw reject("Invalid crawler");
     } catch (err) {
       reject(err);
     }

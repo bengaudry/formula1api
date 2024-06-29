@@ -2,10 +2,12 @@
   "id": "1238",
   "dataType": "fp1",
   "year": "2024",
-  "location": "spain",
-  "gpName": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024",
+  "url": "https://www.formula1.com/en/results.html/2024/races/1238/spain/practice-1.html",
   "sessionName": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024 - PRACTICE 1",
   "circuit": "Circuit de Barcelona-Catalunya, Barcelona",
+  "location": "spain",
+  "fileName": "fp1_results",
+  "gpName": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024",
   "results": [
     {
       "position": 1,

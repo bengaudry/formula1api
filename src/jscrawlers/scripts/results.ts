@@ -26,10 +26,14 @@ export async function fetchRaceResults({
 }: Params) {
   try {
     const url = `${URL_BASE}/${year}/races/${id}/${location}/${
-      isSprint ? "sprint-qualifying" : "qualifying"
+      isSprint ? "sprint-results" : "race-result"
     }.html`;
 
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
+
+    const sprintInSessName = sessionName.toLocaleLowerCase().includes("sprint");
+    if (!sprintInSessName && isSprint) return null;
+    if (sprintInSessName && !isSprint) return null;
 
     const results: RaceResult[] = [];
 
@@ -62,6 +66,7 @@ export async function fetchRaceResults({
       id,
       dataType: `${isSprint ? "sprint" : "race"}-results`,
       year,
+      url,
       sessionName,
       circuit,
       location,

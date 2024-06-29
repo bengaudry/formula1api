@@ -1,7 +1,7 @@
 "use client";
-import { Icon } from "@/components/ui/icon";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Icon } from "@/components/ui/icon";
 
 export default ({ children }: { children: React.ReactNode }) => {
   const links: Array<{ name: string; href: string; external?: boolean }> = [

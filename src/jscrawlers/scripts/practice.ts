@@ -61,6 +61,7 @@ export async function fetchPracticeResults({
       id,
       dataType: `fp${practiceNb}`,
       year,
+      url,
       sessionName,
       circuit,
       location,

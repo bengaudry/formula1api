@@ -15,29 +15,24 @@ type Metadata = {
   id: string;
   dataType: F1DataType;
   year: string | number;
+  url: string;
   location: string;
   sessionName: string;
   circuit: string;
   fileName: string;
 };
 
-export async function writeData(
-  data: any,
-  { id, dataType, year, location, sessionName, circuit, fileName }: Metadata
-) {
+export async function writeData(data: any, metadata: Metadata) {
+  const { year, location, sessionName, fileName } =
+    metadata;
   const dataDir = path.join(cwd(), "src", "data");
   const fileDir = path.join(dataDir, year.toString(), location);
   createPathIfNotExisting(fileDir);
 
   const gpName = cutGpName(sessionName);
   const obj = {
-    id,
-    dataType,
-    year,
-    location,
+    ...metadata,
     gpName,
-    sessionName,
-    circuit,
     results: data,
   };
   const jsonContent = JSON.stringify(obj, null, 2);
@@ -46,7 +41,11 @@ export async function writeData(
   const blob = await put(
     `${year}/${location}/${fileName}.json`,
     JSON.stringify(obj),
-    { access: "public", contentType: "application/json", addRandomSuffix: false }
+    {
+      access: "public",
+      contentType: "application/json",
+      addRandomSuffix: false,
+    }
   );
 
   console.log("blob :", blob);

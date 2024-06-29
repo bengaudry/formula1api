@@ -36,6 +36,10 @@ export async function fetchQualifyingResults({
 
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
 
+    const sprintInSessName = sessionName.toLocaleLowerCase().includes("sprint");
+    if (!sprintInSessName && isSprint) return null;
+    if (sprintInSessName && !isSprint) return null;
+
     const results: QualifyingResult[] = [];
 
     tableRows.each((_, row) => {
@@ -66,6 +70,7 @@ export async function fetchQualifyingResults({
       id,
       dataType: isSprint ? "sprint-qualifying" : "race-qualifying",
       year,
+      url,
       sessionName,
       circuit,
       location,
