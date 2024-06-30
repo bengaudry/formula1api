@@ -1,0 +1,24 @@
+{
+  "crons": [
+    {
+      "path": "/api/run-crawler?crawler=fp1&year=2024&location=great-britain&id=1240",
+      "schedule": "40 13 5 7 *"
+    },
+    {
+      "path": "/api/run-crawler?crawler=fp2&year=2024&location=great-britain&id=1240",
+      "schedule": "10 17 5 7 *"
+    },
+    {
+      "path": "/api/run-crawler?crawler=fp3&year=2024&location=great-britain&id=1240",
+      "schedule": "40 12 6 7 *"
+    },
+    {
+      "path": "/api/run-crawler?crawler=race-qualifying&year=2024&location=great-britain&id=1240",
+      "schedule": "10 16 6 7 *"
+    },
+    {
+      "path": "/api/run-crawler?crawler=race-week&year=2024&location=great-britain&id=1240",
+      "schedule": "10 17 7 7 *"
+    }
+  ]
+}
