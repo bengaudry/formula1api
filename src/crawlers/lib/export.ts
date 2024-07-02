@@ -1,15 +1,6 @@
 "use server";
-import { put } from "@vercel/blob";
-import path from "path";
-import { cwd } from "process";
-import * as fs from "fs";
+import { put, PutBlobResult } from "@vercel/blob";
 import { cutGpName } from "./common";
-
-async function createPathIfNotExisting(path: string) {
-  if (!fs.existsSync(path)) {
-    fs.mkdirSync(path, { recursive: true });
-  }
-}
 
 type Metadata = {
   id: string;
@@ -23,30 +14,37 @@ type Metadata = {
 };
 
 export async function writeData(data: any, metadata: Metadata) {
-  const { year, location, sessionName, fileName } =
-    metadata;
-  const dataDir = path.join(cwd(), "src", "data");
-  const fileDir = path.join(dataDir, year.toString(), location);
-  createPathIfNotExisting(fileDir);
+  try {
+    const { year, location, sessionName, fileName } = metadata;
 
-  const gpName = cutGpName(sessionName);
-  const obj = {
-    ...metadata,
-    gpName,
-    results: data,
-  };
-  const jsonContent = JSON.stringify(obj, null, 2);
-  fs.writeFileSync(path.join(fileDir, fileName), jsonContent);
+    console.log("[writeData()] -> Passed url :", metadata.url);
 
-  const blob = await put(
-    `${year}/${location}/${fileName}.json`,
-    JSON.stringify(obj),
-    {
-      access: "public",
-      contentType: "application/json",
-      addRandomSuffix: false,
-    }
-  );
+    const gpName = cutGpName(sessionName);
+    const obj = {
+      ...metadata,
+      gpName,
+      results: data,
+    };
 
-  console.log("blob :", blob);
+    console.log("[writeData()] -> Passed metadata :\n", metadata);
+    console.log("[writeData()] -> Passed obj      :\n", data);
+
+    const jsonContent = JSON.stringify(obj, null, 2);
+    const blob = await put(
+      `${year}/${location}/${fileName}.json`,
+      jsonContent,
+      {
+        access: "public",
+        contentType: "application/json",
+        addRandomSuffix: false,
+      }
+    );
+
+    console.log("blob :", blob);
+    return blob;
+  } catch (err) {
+    const strError = "ERROR WHILE ADDING TO DATABASE : " + err;
+    console.error(strError);
+    throw new Error(strError);
+  }
 }

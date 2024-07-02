@@ -37,8 +37,10 @@ export async function fetchQualifyingResults({
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
 
     const sprintInSessName = sessionName.toLocaleLowerCase().includes("sprint");
-    if (!sprintInSessName && isSprint) return null;
-    if (sprintInSessName && !isSprint) return null;
+    if (!sprintInSessName && isSprint)
+      return { error: "No sprint results found" };
+    if (sprintInSessName && !isSprint)
+      return { error: "Race results are not available yet" };
 
     const results: QualifyingResult[] = [];
 
@@ -66,7 +68,7 @@ export async function fetchQualifyingResults({
       results.push({ position, driver, car, teamColor, times, laps });
     });
 
-    writeData(results, {
+    await writeData(results, {
       id,
       dataType: isSprint ? "sprint-qualifying" : "race-qualifying",
       year,
@@ -78,6 +80,7 @@ export async function fetchQualifyingResults({
     });
     return results;
   } catch (error) {
-    console.error("Error fetching the data:", error);
+    console.error("Error in crawler `qualifying.ts` :", error);
+    return { error }
   }
 }

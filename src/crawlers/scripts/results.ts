@@ -29,11 +29,16 @@ export async function fetchRaceResults({
       isSprint ? "sprint-results" : "race-result"
     }.html`;
 
+    console.info("[results.ts] -> Fetching ", url);
+
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
 
     const sprintInSessName = sessionName.toLocaleLowerCase().includes("sprint");
-    if (!sprintInSessName && isSprint) return null;
-    if (sprintInSessName && !isSprint) return null;
+    console.info(sessionName, sprintInSessName, isSprint);
+    if (!sprintInSessName && isSprint)
+      return { error: "No sprint results found" };
+    if (sprintInSessName && !isSprint)
+      return { error: "Race results are not available yet" };
 
     const results: RaceResult[] = [];
 
@@ -62,7 +67,9 @@ export async function fetchRaceResults({
       });
     });
 
-    writeData(results, {
+    console.info("[results.ts] -> Writing data with url ", url);
+
+    await writeData(results, {
       id,
       dataType: `${isSprint ? "sprint" : "race"}-results`,
       year,
@@ -74,6 +81,7 @@ export async function fetchRaceResults({
     });
     return results;
   } catch (error) {
-    console.error("Error fetching the data:", error);
+    console.error("Error in crawler `results.ts` :", error);
+    return { error };
   }
 }

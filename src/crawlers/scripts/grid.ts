@@ -25,8 +25,10 @@ export async function fetchGrid({ year, id, location, isSprint }: Params) {
     const { $, sessionName, circuit, tableRows } = await parseUrlContent(url);
 
     const sprintInSessName = sessionName.toLocaleLowerCase().includes("sprint");
-    if (!sprintInSessName && isSprint) return null;
-    if (sprintInSessName && !isSprint) return null;
+    if (!sprintInSessName && isSprint)
+      return { error: "No sprint results found" };
+    if (sprintInSessName && !isSprint)
+      return { error: "Race results are not available yet" };
 
     const results: Grid[] = [];
 
@@ -51,7 +53,7 @@ export async function fetchGrid({ year, id, location, isSprint }: Params) {
       });
     });
 
-    writeData(results, {
+    await writeData(results, {
       id,
       url,
       dataType: `${isSprint ? "sprint" : "race"}-grid`,
@@ -63,6 +65,7 @@ export async function fetchGrid({ year, id, location, isSprint }: Params) {
     });
     return results;
   } catch (error) {
-    console.error("Error fetching the data:", error);
+    console.error("Error in crawler `grid.ts` :", error);
+    return { error };
   }
 }

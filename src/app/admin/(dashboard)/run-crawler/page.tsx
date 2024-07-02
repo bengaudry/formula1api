@@ -1,20 +1,19 @@
 "use client";
+import { useEffect, useState } from "react";
+import { useFetch } from "@/hooks/useFetch";
+import { capitalizeFirstLetter } from "@/lib/str";
 import { Button, Link } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useFetch } from "@/hooks/useFetch";
-import { fetchPracticeResults } from "@/crawlers/scripts/practice";
-import { capitalizeFirstLetter } from "@/lib/str";
-import { Familjen_Grotesk } from "next/font/google";
-import { useEffect, useState } from "react";
-import { isDataView } from "util/types";
+import { SelectLabel } from "@radix-ui/react-select";
 
 export default () => {
   const [crawlerType, setCrawlerType] = useState<Crawler>("full-weekend");
@@ -98,15 +97,65 @@ export default () => {
             <SelectValue placeholder="Select a crawler" />
           </SelectTrigger>
           <SelectContent>
-            {crawlers.map((crawler, idx) => (
-              <SelectItem
-                value={crawler}
-                key={idx}
-                defaultChecked={crawler === crawlerType}
-              >
-                {capitalizeFirstLetter(crawler)}
-              </SelectItem>
-            ))}
+            <SelectGroup>
+              <SelectLabel>Full weekend</SelectLabel>
+              {crawlers
+                .filter((c) => c === "full-weekend" || c === "sprint-weekend")
+                .map((crawler, idx) => (
+                  <SelectItem
+                    value={crawler}
+                    key={idx}
+                    defaultChecked={crawler === crawlerType}
+                  >
+                    {capitalizeFirstLetter(crawler)}
+                  </SelectItem>
+                ))}
+            </SelectGroup>
+
+            <SelectGroup>
+              <SelectLabel>Free practices</SelectLabel>
+              {crawlers
+                .filter((c) => c.startsWith("fp"))
+                .map((crawler, idx) => (
+                  <SelectItem
+                    value={crawler}
+                    key={idx}
+                    defaultChecked={crawler === crawlerType}
+                  >
+                    {capitalizeFirstLetter(crawler)}
+                  </SelectItem>
+                ))}
+            </SelectGroup>
+
+            <SelectGroup>
+              <SelectLabel>Race</SelectLabel>
+              {crawlers
+                .filter((c) => c.startsWith("race"))
+                .map((crawler, idx) => (
+                  <SelectItem
+                    value={crawler}
+                    key={idx}
+                    defaultChecked={crawler === crawlerType}
+                  >
+                    {capitalizeFirstLetter(crawler)}
+                  </SelectItem>
+                ))}
+            </SelectGroup>
+
+            <SelectGroup>
+              <SelectLabel>Sprint</SelectLabel>
+              {crawlers
+                .filter((c) => c.startsWith("sprint") && c !== "sprint-weekend")
+                .map((crawler, idx) => (
+                  <SelectItem
+                    value={crawler}
+                    key={idx}
+                    defaultChecked={crawler === crawlerType}
+                  >
+                    {capitalizeFirstLetter(crawler)}
+                  </SelectItem>
+                ))}
+            </SelectGroup>
           </SelectContent>
         </Select>
         <Button className="mt-2" disabled={isLoading}>
@@ -146,7 +195,7 @@ export default () => {
 
         <div className={`overflow-hidden h-full`}>
           <textarea
-            value={data ? JSON.stringify(data) : "No output"}
+            value={data ? JSON.stringify(data) : error ?? "No output"}
             readOnly
             className={`bg-transparent text-zinc-500 h-full w-full outline-none border-0`}
           />

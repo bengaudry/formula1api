@@ -20,9 +20,9 @@ export default ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="flex flex-col w-screen h-screen overflow-hidden">
-      <header className="border-b py-4 border-zinc-700 bg-zinc-900">
+      <header className="border-b pt-4 border-zinc-700 bg-zinc-900">
         <h2 className="text-lg font-medium px-4">Dashboard</h2>
-        <div className="mt-2 flex overflow-x-scroll px-4">
+        <div className="mt-2 flex overflow-x-scroll px-4 pb-4">
           {links.map(({ name, href, external }) => {
             const active =
               pathname === `/admin${href}` ||

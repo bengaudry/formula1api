@@ -25,7 +25,8 @@ export function useFetch<T extends any>(): UseFetchReturnType<T> {
       })
       .then((json) => {
         console.info("useFetch json :", json);
-        if (json && "error" in json) throw Error("Error while fetching data");
+        if (json && typeof json !== "string" && "error" in json)
+          throw Error("Error while fetching data");
         setData(json as T);
       })
       .catch((err) => {
